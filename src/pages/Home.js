@@ -2,7 +2,7 @@ import React from "react";
 import { homeContent } from "../Datalist";
 
 const Home = () => {
-  const { stories } = homeContent;
+  const { stories, footerBanners } = homeContent;
   return (
     <div>
       <div className="flex justify-between bg-black">
@@ -75,6 +75,25 @@ const Home = () => {
             </button>
           </div>
         ))}
+      </div>
+
+      {/* footer banners */}
+
+      <div className="flex space-x-5 items-center   text-center mx-[10%]">
+        {footerBanners.map((item) => {
+          return (
+            <div className="flex flex-col">
+              <div className="mt-[30%] mb-[20%]">
+                <img src={item.img} className="mx-auto w-[72px] h-[72px]" />
+              </div>
+
+              <h1 className="mt-[5%] font-bold text-lg mb-[10%]">
+                {item.title}
+              </h1>
+              <p className="text-base opacity-60">{item.description}</p>
+            </div>
+          );
+        })}
       </div>
     </div>
   );

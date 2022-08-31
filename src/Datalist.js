@@ -1,3 +1,7 @@
+import Pic1 from "./assets/features/desktop/responsive.svg";
+import Pic2 from "./assets/features/desktop/no-limit.svg";
+import Pic3 from "./assets/features/desktop/embed.svg";
+
 export const homeContent = {
   banner: {
     heading: "Create and share your photo Stories",
@@ -52,19 +56,19 @@ export const homeContent = {
       title: "100% Responsive",
       description:
         "No matter which the device you’re on, our site is fully responsive and stories look beautiful on any screen.",
-      img: require("./assets/features/desktop/responsive.svg"),
+      img: Pic1,
     },
     {
       title: "No Photo Upload Limit",
       description:
         "Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share all of your stories in one go.",
-      img: require("./assets/features/desktop/no-limit.svg"),
+      img: Pic2,
     },
     {
       title: "Available to Embed",
       description:
         "Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more.",
-      img: require("./assets/features/desktop/embed.svg"),
+      img: Pic3,
     },
   ],
 };
