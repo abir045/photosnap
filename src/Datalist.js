@@ -8,6 +8,8 @@ export const homeContent = {
     body: "Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others",
     button: "Get an invite",
     img: require("./assets/home/desktop/create-and-share.jpg"),
+    imgMobile: require("./assets/home/mobile/create-and-share.jpg"),
+    imgTab: require("./assets/home/tablet/create-and-share.jpg"),
   },
 
   bannerStories: {
@@ -15,6 +17,8 @@ export const homeContent = {
     body: "We provide design templates to ensure your stories look terrific. Easily add photos, text, embed maps and media from other networks. Then share your story with everyone.",
     button: "View the stories",
     img: require("./assets/home/desktop/beautiful-stories.jpg"),
+    imgMobile: require("./assets/home/mobile/beautiful-stories.jpg"),
+    imgTab: require("./assets/home/tablet/beautiful-stories.jpg"),
   },
 
   bannerDesign: {
@@ -22,6 +26,8 @@ export const homeContent = {
     body: "Photosnap can help you create stories that resonate with your audience.Our tool is designed for photographers of all levels, brands, businesses you name it.",
     button: "View the stories",
     img: require("./assets/home/desktop/designed-for-everyone.jpg"),
+    imgMobile: require("./assets/home/mobile/designed-for-everyone.jpg"),
+    imgTab: require("./assets/home/tablet/designed-for-everyone.jpg"),
   },
 
   stories: [
@@ -30,6 +36,7 @@ export const homeContent = {
       photographer: "by John Appleseed",
       button: "Read Story",
       img: require("./assets/stories/desktop/mountains.jpg"),
+      imgMobile: require("./assets/stories/mobile/mountains.jpg"),
     },
     {
       title: "Sunset Cityscapes",
