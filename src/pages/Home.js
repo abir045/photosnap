@@ -5,8 +5,8 @@ const Home = () => {
   const { stories, footerBanners } = homeContent;
   return (
     <div>
-      <div className="flex flex-col-reverse  justify-between bg-black md:flex-row">
-        <div className="flex flex-col  items-center my-12   p-4 lg:w-[40%] mt-[10%] md:w-[70%]  ">
+      <div className="flex flex-col-reverse justify-between bg-black md:flex-row">
+        <div className="flex flex-col   items-center my-12   p-4 lg:w-[40%] mt-[10%] md:w-[70%]  ">
           <h1 className="flex text-white w-full text-4xl md:text-[40px]  uppercase font-bold leading-[48px] p-4  md:w-[60%] lg:ml-[40%] lg:w-[90%]  md:mr-[35%]">
             {homeContent.banner.heading}
           </h1>
@@ -79,17 +79,20 @@ const Home = () => {
       {/* stories cards */}
       <div className="flex flex-col relative md:flex-row">
         {stories.map((item) => (
-          <div className="flex flex-col ">
-            <img src={item.img} />
-            <h2 className="absolute text-lg bottom-[30%] mx-[2%] font-bold  text-white uppercase">
+          <div className="flex flex-col w-full ">
+            <img className="w-full" src={item.img} />
+            <h2
+              className="absolute text-lg mt-[85%] pt-[20%] ml-[10%] md:bottom-[30%] md:ml-[3%]
+              font-bold   text-white uppercase"
+            >
               {" "}
               {item.title}
             </h2>
-            <p className="absolute bottom-[23%] mx-[2%] text-sm  text-white">
+            <p className="absolute md:bottom-[23%]  mt-[90%] pt-[20%]  ml-[10%] md:ml-[3%] mx-[2%] text-sm  text-white">
               {item.photographer}
             </p>
-            <hr className="absolute w-[20%] bottom-[15%] mx-[2%] border-white opacity-50 border-1 " />
-            <button className="absolute text-xs bottom-[5%] mx-[2%]  text-white uppercase">
+            <hr className="absolute md:w-[20%] mt-[120%]  z-10  ml-[10%] md:ml-[3%] w-[80%] md:bottom-[15%]  mx-[2%] border-white opacity-50 border-1 " />
+            <button className="absolute text-xs md:bottom-[5%] mt-[95%] pt-[30%] ml-[10%] md:ml-[3%]  mx-[2%]  text-white uppercase">
               {item.button}
             </button>
           </div>
@@ -98,7 +101,7 @@ const Home = () => {
 
       {/* footer banners */}
 
-      <div className="flex space-x-5 items-center   text-center mx-[10%]">
+      <div className="md:flex space-x-5 items-center text-center mx-[5%]">
         {footerBanners.map((item) => {
           return (
             <div className="flex flex-col">
