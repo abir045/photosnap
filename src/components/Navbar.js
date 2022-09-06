@@ -3,7 +3,7 @@ import logo from "../assets/shared/desktop/logo.svg";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-around my-10 items-center">
+    <div className="flex justify-around my-5 items-center">
       <img className="flex" src={logo} />
       <ul className="flex space-x-10 text-xs font-bold uppercase  ">
         <li className="hover:text-[#dfdfdf] cursor-pointer">stories</li>

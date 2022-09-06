@@ -101,7 +101,7 @@ const Home = () => {
 
       {/* footer banners */}
 
-      <div className="md:flex space-x-5 items-center text-center mx-[5%]">
+      <div className="md:flex space-x-5 items-center text-center my-10 mx-[5%]">
         {footerBanners.map((item) => {
           return (
             <div className="flex flex-col">
