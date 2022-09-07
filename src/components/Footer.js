@@ -27,7 +27,7 @@ const Footer = () => {
           {/* youtube logo */}
           <div className="flex relative">
             <img
-              className="absolute top-0  hover:opacity-0"
+              className="absolute top-0  hover:opacity-0 cursor-pointer"
               src={youtubeHover}
             />
             <img className="hover:opacity-100" src={youtube} />
@@ -55,7 +55,7 @@ const Footer = () => {
               className="absolute top-0  hover:opacity-0"
               src={instagramHover}
             />
-            <img className=" hover:opacity-100" src={instagram} />
+            <img className="hover:opacity-100" src={instagram} />
           </div>
         </div>
       </div>

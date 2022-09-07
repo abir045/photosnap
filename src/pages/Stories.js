@@ -4,15 +4,23 @@ import arrow from "../assets/shared/desktop/arrow.svg";
 
 const Stories = () => {
   return (
-    <div className="flex flex-col">
-      <div className="flex flex-col my-5 relative ">
-        <img src={StoriesContent.banner.img} />
+    <div className="flex flex-col ">
+      <div className="flex flex-col   relative ">
+        <img className="hidden lg:flex" src={StoriesContent.banner.img} />
+        <img
+          className="hidden lg:hidden md:flex"
+          src={StoriesContent.banner.imgTab}
+        />
+        <img
+          className="flex lg:hidden md:hidden"
+          src={StoriesContent.banner.imgMobile}
+        />
 
-        <div className="absolute top-[15%] text-white mx-[5%]">
+        <div className="absolute top-[100%] bg-black w-full py-10  px-10   md:top-[15%] text-white md:mx-[5%]">
           <h5 className="text-xs uppercase font-bold tracking-[2px] my-5">
             {StoriesContent.banner.heading}
           </h5>
-          <h1 className="font-bold text-[40px] uppercase tracking-[4.166px] xl:w-[25%]">
+          <h1 className="font-bold text-[32px] w-[70%] tracking-[3.33px] md:text-[40px] uppercase md:tracking-[4.166px] md:w-[40%] xl:w-[25%]">
             {StoriesContent.banner.headingTitle}
           </h1>
           <div className="flex  space-x-3 my-5">
@@ -23,7 +31,7 @@ const Stories = () => {
               {StoriesContent.banner.photographer}
             </span>
           </div>
-          <p className="my-5 text-white text-base opacity-60 xl:w-[30%] ">
+          <p className="my-5 text-white text-base opacity-60 md:w-[60%] xl:w-[30%] ">
             {StoriesContent.banner.body}
           </p>
 
@@ -31,6 +39,7 @@ const Stories = () => {
             <button className="uppercase text-xs tracking-[2px]">
               {StoriesContent.banner.button}
             </button>
+            -
             <img src={arrow} alt="arrow" />
           </div>
         </div>
