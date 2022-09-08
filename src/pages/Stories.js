@@ -1,7 +1,6 @@
 import React from "react";
 import { StoriesContent } from "../Datalist";
 import arrow from "../assets/shared/desktop/arrow.svg";
-import PhotoAlbum from "react-photo-album";
 
 const Stories = () => {
   return (
@@ -41,7 +40,7 @@ const Stories = () => {
               <button className="uppercase text-xs tracking-[2px]">
                 {StoriesContent.banner.button}
               </button>
-              -
+
               <img src={arrow} alt="arrow" />
             </div>
           </div>
@@ -49,72 +48,148 @@ const Stories = () => {
 
         {/* <img src={} alt="cover" /> */}
       </div>
-      <div className="flex  w-full">
-        {StoriesContent.photos.slice(0, 1).map((item) =>
-          item.map((item, id) => {
-            return (
-              <div key={id} className="flex w-full relative">
-                <img className="w-full" src={item.img} />
+      {/* <div className="flex flex-col  md:hidden  w-full mt-[60%] pt-[70%] md:mt-[-70%]">
+        {StoriesContent.photos.slice(0, 4).map((item, id) => (
+          <div key={id} className="flex w-full md:flex-col  relative">
+            <img className="w-full" src={item.img} />
 
-                <div className="absolute left-[5%] top-[70%]">
-                  <p className="text-white">{item.date}</p>
-                  <p className="text-white">{item.title}</p>
-                </div>
+            <div className="absolute left-[5%] top-[70%] md:top-[50%] xl:top-[70%]">
+              <p className="text-white text-[13px]">{item.date}</p>
+              <p className="text-white text-xl font-bold">{item.title}</p>
+              <p className="text-white text-[13px] my-2">{item.photographer}</p>
+
+              <hr className="border-white w-[300px] opacity-25 mb-3 md:w-[250px]   border-1 " />
+
+              <div className="flex justify-between">
+                <p className="text-white uppercase text-xs font-bold tracking-[2px]">
+                  {item.button}
+                </p>
+
+                <img className="flex" src={arrow} alt="arrow" />
               </div>
-            );
-          })
-        )}
+            </div>
+          </div>
+        ))}
+      </div> */}
+
+      {/* tab  */}
+
+      <div className="grid grid-flow-row mt-[60%] pt-[70%] md:mt-[-70%] xl:grid-rows-4 xl:grid-cols-4  lg:grid-rows-4 lg:grid-cols-4  md:grid-cols-2 md:grid-rows-8">
+        {StoriesContent.photos.map((item, id) => (
+          <div
+            key={id}
+            className="grid grid-cols-1 relative  w-full xl:grid-cols-1"
+          >
+            <img className="w-full hover:-translate-y-5" src={item.img} />
+            <div className="absolute left-[5%] top-[70%] md:top-[70%] lg:top-[60%] xl:top-[70%]">
+              <p className="text-white text-[13px]">{item.date}</p>
+              <p className="text-white text-xl font-bold">{item.title}</p>
+              <p className="text-white text-[13px] my-2">{item.photographer}</p>
+
+              <hr className="border-white w-[300px] opacity-25 mb-3 md:w-[200px] border-1 " />
+
+              <div className="flex justify-between">
+                <p className="text-white uppercase text-xs font-bold tracking-[2px]">
+                  {item.button}
+                </p>
+
+                <img className="flex" src={arrow} alt="arrow" />
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
-      <div className="flex">
+
+      {/* <div className="flex flex-col md:flex-row">
         {StoriesContent.photos.slice(1, 2).map((item) =>
           item.map((item, id) => {
             return (
-              <div key={id} className="flex w-full relative">
+              <div key={id} className="flex  w-full relative">
                 <img className="w-full" src={item.img} />
 
-                <div className="absolute left-[5%] top-[70%]">
-                  <p className="text-white">{item.date}</p>
-                  <p className="text-white">{item.title}</p>
+                <div className="absolute left-[5%] top-[70%] md:top-[50%] xl:top-[70%]">
+                  <p className="text-white text-[13px]">{item.date}</p>
+                  <p className="text-white text-xl font-bold">{item.title}</p>
+
+                  <p className="text-white text-[13px] my-2">
+                    {item.photographer}
+                  </p>
+
+                  <hr className="border-white w-[300px] opacity-25 mb-3 md:w-[250px]  border-1 " />
+
+                  <div className="flex justify-between">
+                    <p className="text-white uppercase text-xs font-bold tracking-[2px]">
+                      {item.button}
+                    </p>
+
+                    <img className="flex" src={arrow} alt="arrow" />
+                  </div>
                 </div>
               </div>
             );
           })
         )}
-      </div>
+      </div> */}
 
-      <div className="flex">
+      {/* <div className="flex flex-col md:flex-row">
         {StoriesContent.photos.slice(2, 3).map((item) =>
           item.map((item, id) => {
             return (
               <div key={id} className="flex w-full relative">
                 <img className="w-full" src={item.img} />
 
-                <div className="absolute left-[5%] top-[70%]">
-                  <p className="text-white">{item.date}</p>
-                  <p className="text-white">{item.title}</p>
+                <div className="absolute left-[5%] top-[70%] md:top-[50%] xl:top-[70%]">
+                  <p className="text-white text-[13px]">{item.date}</p>
+                  <p className="text-white font-bold text-xl">{item.title}</p>
+                  <p className="text-white text-[13px] my-2">
+                    {item.photographer}
+                  </p>
+
+                  <hr className="border-white w-[300px] opacity-25 mb-3 md:w-[250px]  border-1 " />
+
+                  <div className="flex justify-between">
+                    <p className="text-white uppercase text-xs font-bold tracking-[2px]">
+                      {item.button}
+                    </p>
+
+                    <img className="flex" src={arrow} alt="arrow" />
+                  </div>
                 </div>
               </div>
             );
           })
         )}
-      </div>
+      </div> */}
 
-      <div className="flex">
+      {/* <div className="flex flex-col md:flex-row">
         {StoriesContent.photos.slice(3, 4).map((item) =>
           item.map((item, id) => {
             return (
               <div key={id} className="flex w-full relative">
                 <img className="w-full" src={item.img} />
 
-                <div className="absolute left-[5%] top-[70%]">
+                <div className="absolute left-[5%] top-[70%] md:top-[50%] xl:top-[70%]">
                   <p className="text-white">{item.date}</p>
                   <p className="text-white">{item.title}</p>
+                  <p className="text-white text-[13px] my-2">
+                    {item.photographer}
+                  </p>
+
+                  <hr className="border-white w-[300px] opacity-25 mb-3 md:w-[250px]  border-1 " />
+
+                  <div className="flex justify-between">
+                    <p className="text-white uppercase text-xs font-bold tracking-[2px]">
+                      {item.button}
+                    </p>
+
+                    <img className="flex" src={arrow} alt="arrow" />
+                  </div>
                 </div>
               </div>
             );
           })
         )}
-      </div>
+      </div> */}
     </>
   );
 };
