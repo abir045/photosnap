@@ -14,11 +14,12 @@ import instagramHover from "../assets/shared/desktop/instagramHover.svg";
 
 const Footer = () => {
   return (
-    <div className="flex my-15 py-10 bg-black  items-center justify-between md:py-[15%]">
-      <div className="flex-col space-y-10 md:mx-[5%]">
-        <img className="flex text-white" src={logo} />
+    <div className="flex flex-col py-[5%]  bg-black mx-auto items-center justify-between md:py-[15%]">
+      <div className="flex flex-col space-y-8  my-[10%]">
+        <img className="flex text-white mx-auto w-[170px] " src={logo} />
 
-        <div className="flex my-5 space-x-4 ">
+        {/* icon container */}
+        <div className="flex  space-x-4 justify-center">
           {/* fb logo */}
           <div className="flex relative">
             <img className="absolute top-0  hover:opacity-0" src={Facebook} />
@@ -47,32 +48,38 @@ const Footer = () => {
               className="absolute top-0  hover:opacity-0"
               src={pinterestHover}
             />
-            <img className=" hover:opacity-100" src={pinterest} />
+            <img className="hover:opacity-100" src={pinterest} />
           </div>
 
           <div className="flex relative">
             <img
               className="absolute top-0  hover:opacity-0"
               src={instagramHover}
+              alt="instagram"
             />
             <img className="hover:opacity-100" src={instagram} />
           </div>
         </div>
+
+        <ul className="flex flex-col  pb-[25%] text-center text-xs space-y-4 text-white font-bold uppercase tracking-[2px] md:space-x-4  md:flex-row">
+          <li className="hover:opacity-30">home</li>
+          <li className="hover:opacity-30">stories</li>
+          <li className="hover:opacity-30">features</li>
+          <li className="hover:opacity-30">pricing</li>
+        </ul>
+
+        <div className="flex space-x-3 mx-auto  md:mr-[5%]">
+          <button className="flex text-xs font-bold uppercase text-white tracking-[2px] hover:underline">
+            get an invite
+          </button>
+          <img className="flex" src={arrow} alt="arrow" />
+        </div>
+
+        <p className="flex opacity-50 text-white text-[15px]">
+          Copyright 2019. All Rights Reserved
+        </p>
       </div>
       {/* links */}
-      <ul className="flex flex-col ml-[-20%]  text-xs space-y-2 text-white font-bold uppercase md:space-x-4  md:flex-row">
-        <li className="hover:opacity-30">home</li>
-        <li className="hover:opacity-30">stories</li>
-        <li className="hover:opacity-30">features</li>
-        <li className="hover:opacity-30">pricing</li>
-      </ul>
-
-      <div className="flex space-x-3 md:mr-[5%]">
-        <button className="flex text-xs font-bold uppercase text-white tracking-[2px] hover:underline">
-          get an invite
-        </button>
-        <img className="flex" src={arrow} alt="arrow" />
-      </div>
     </div>
   );
 };

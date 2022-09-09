@@ -8,7 +8,7 @@ const Features = () => {
     <div>
       <div className="flex flex-col md:flex-row-reverse">
         <img
-          className="flex md:hidden"
+          className="flex md:hidden lg:hidden"
           src={FeaturesContent.banner.imgMobile}
         />
         <img
@@ -16,7 +16,7 @@ const Features = () => {
           src={FeaturesContent.banner.imgTab}
         />
         <img
-          className="hidden md:hidden lg:flex lg:w-[60%]"
+          className="hidden md:hidden lg:flex"
           src={FeaturesContent.banner.img}
         />
 
@@ -61,11 +61,17 @@ const Features = () => {
           src={betaBanner.imgTab}
           alt="beta banner"
         />
-        <div className="flex flex-col absolute  top-[30%]  ml-[10%] md:flex-row md:mx-[5%] md:justify-between ">
-          <h1 className="flex text-white font-bold uppercase text-[32px] leading-10 traking-[3.33px] w-[80%] mb-5 md:w-[50%] md:text-[40px]">
+
+        <img
+          className="hidden md:hidden lg:flex"
+          src={betaBanner.img}
+          alt="beta banner"
+        />
+        <div className="flex flex-col absolute  top-[30%]  ml-[10%] md:flex-row md:mx-[5%] md:justify-between">
+          <h1 className="flex text-white  font-bold uppercase text-[32px] leading-10 traking-[3.33px] w-[80%] mb-5 md:w-[50%] md:text-[40px]">
             {betaBanner.title}
           </h1>
-          <div className="flex space-x-3 md:items-center">
+          <div className="flex space-x-3 md:items-center md:justify-end md:mr-0">
             <button className="flex text-white text-xs font-bold tracking-[2px] uppercase">
               {betaBanner.button}
             </button>
