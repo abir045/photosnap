@@ -14,8 +14,8 @@ import instagramHover from "../assets/shared/desktop/instagramHover.svg";
 
 const Footer = () => {
   return (
-    <div className="flex my-15 py-10 bg-black  items-center justify-around">
-      <div className="flex-col space-y-10 ">
+    <div className="flex my-15 py-10 bg-black  items-center justify-between md:py-[15%]">
+      <div className="flex-col space-y-10 md:mx-[5%]">
         <img className="flex text-white" src={logo} />
 
         <div className="flex my-5 space-x-4 ">
@@ -60,14 +60,14 @@ const Footer = () => {
         </div>
       </div>
       {/* links */}
-      <ul className="flex flex-col ml-[-20%] text-xs space-y-2 text-white font-bold uppercase">
+      <ul className="flex flex-col ml-[-20%]  text-xs space-y-2 text-white font-bold uppercase md:space-x-4  md:flex-row">
         <li className="hover:opacity-30">home</li>
         <li className="hover:opacity-30">stories</li>
         <li className="hover:opacity-30">features</li>
         <li className="hover:opacity-30">pricing</li>
       </ul>
 
-      <div className="flex space-x-3">
+      <div className="flex space-x-3 md:mr-[5%]">
         <button className="flex text-xs font-bold uppercase text-white tracking-[2px] hover:underline">
           get an invite
         </button>

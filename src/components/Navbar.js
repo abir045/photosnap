@@ -9,7 +9,9 @@ const Navbar = () => {
         <li className="hover:text-[#dfdfdf] cursor-pointer">
           <a href="/stories">stories</a>
         </li>
-        <li className="hover:text-[#dfdfdf] cursor-pointer">features</li>
+        <li className="hover:text-[#dfdfdf] cursor-pointer">
+          <a href="/features">features</a>
+        </li>
         <li className="hover:text-[#dfdfdf] cursor-pointer">pricing</li>
       </ul>
       <button className="flex text-white text-xs bg-black uppercase p-3 h-[40px] rounded hover:text-black  hover:bg-[#dfdfdf] tracking-[2px]">

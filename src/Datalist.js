@@ -1,6 +1,9 @@
 import Pic1 from "./assets/features/desktop/responsive.svg";
 import Pic2 from "./assets/features/desktop/no-limit.svg";
 import Pic3 from "./assets/features/desktop/embed.svg";
+import Pic4 from "./assets/features/desktop/custom-domain.svg";
+import Pic5 from "./assets/features/desktop/boost-exposure.svg";
+import Pic6 from "./assets/features/desktop/drag-drop.svg";
 
 export const homeContent = {
   banner: {
@@ -235,4 +238,62 @@ export const StoriesContent = {
       button: "read story",
     },
   ],
+};
+
+export const FeaturesContent = {
+  banner: {
+    heading: "Features",
+    headingTitle:
+      "We make sure all of our features are designed to be loved by every aspiring and even professional photograpers who wanted to share their stories.",
+    img: require("./assets/features/desktop/hero.jpg"),
+    imgMobile: require("./assets/features/mobile/hero.jpg"),
+    imgTab: require("./assets/features/tablet/hero.jpg"),
+  },
+
+  featureBanners: [
+    {
+      title: "100% Responsive",
+      description:
+        "No matter which the device you’re on, our site is fully responsive and stories look beautiful on any screen.",
+      img: Pic1,
+    },
+    {
+      title: "No Photo Upload Limit",
+      description:
+        "Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share all of your stories in one go.",
+      img: Pic2,
+    },
+    {
+      title: "Available to Embed",
+      description:
+        "Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more.",
+      img: Pic3,
+    },
+    {
+      title: "Custom Domain",
+      description:
+        "With Photosnap subscriptions you can host your stories on your own domain. You can also remove our branding!",
+      img: Pic4,
+    },
+    {
+      title: "Boost Your Exposure",
+      description:
+        "Users that viewed your story or gallery can easily get notifed of new and featured stories with our built in mailing list.",
+      img: Pic5,
+    },
+    {
+      title: "Drag & Drop Image",
+      description:
+        "Easily drag and drop your image and get beautiful shots everytime. No over the top tooling to add friction to creating stories.",
+      img: Pic6,
+    },
+  ],
+
+  betaBanner: {
+    title: "We're in Beta. Get your invite today!",
+    button: "Get an invite",
+    img: require("./assets/shared/desktop/bg-beta.jpg"),
+    imgTab: require("./assets/shared/tablet/bg-beta.jpg"),
+    imgMobile: require("./assets/shared/mobile/bg-beta.jpg"),
+  },
 };
