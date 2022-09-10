@@ -319,7 +319,7 @@ export const PricingContent = {
       title: "Basic",
       description:
         "Includes basic usage of our platform. Recommended for new and aspiring photographers.",
-      pricePerMonth: "$19.00 per month",
+      pricePerMonth: "$19.00",
       pricePerYearly: "$190.00 per year",
       button: "Pick Plan",
     },
@@ -327,7 +327,7 @@ export const PricingContent = {
       title: "Pro",
       description:
         "More advanced features available. Recommended for photography veterans and professionals.",
-      pricePerMonth: "$39.00 per month",
+      pricePerMonth: "$39.00",
       pricePerYearly: "$390.00 per year",
       button: "Pick Plan",
     },
@@ -335,7 +335,7 @@ export const PricingContent = {
       title: "Business",
       description:
         "Additional features available such as more detailed metrics. Recommended for business owners.",
-      pricePerMonth: "$99.00 per month",
+      pricePerMonth: "$99.00",
       pricePerYearly: "$990.00 per year",
       button: "Pick Plan",
     },
