@@ -12,7 +12,9 @@ const Navbar = () => {
         <li className="hover:text-[#dfdfdf] cursor-pointer">
           <a href="/features">features</a>
         </li>
-        <li className="hover:text-[#dfdfdf] cursor-pointer">pricing</li>
+        <li className="hover:text-[#dfdfdf] cursor-pointer">
+          <a href="/pricing">pricing</a>
+        </li>
       </ul>
       <button className="flex text-white text-xs bg-black uppercase p-3 h-[40px] rounded hover:text-black  hover:bg-[#dfdfdf] tracking-[2px]">
         get an invite

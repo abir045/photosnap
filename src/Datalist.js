@@ -4,6 +4,7 @@ import Pic3 from "./assets/features/desktop/embed.svg";
 import Pic4 from "./assets/features/desktop/custom-domain.svg";
 import Pic5 from "./assets/features/desktop/boost-exposure.svg";
 import Pic6 from "./assets/features/desktop/drag-drop.svg";
+import check from "./assets/pricing/desktop/check.svg";
 
 export const homeContent = {
   banner: {
@@ -296,4 +297,116 @@ export const FeaturesContent = {
     imgTab: require("./assets/shared/tablet/bg-beta.jpg"),
     imgMobile: require("./assets/shared/mobile/bg-beta.jpg"),
   },
+};
+
+export const PricingContent = {
+  banner: {
+    title: "Pricing",
+    description:
+      "Create a your stories, Photosnap is a platform for photographers and visual storytellers. It’s the simple way to create and share your photos.",
+    img: require("./assets/pricing/desktop/hero.jpg"),
+    imgTab: require("./assets/pricing/tablet/hero.jpg"),
+    imgMb: require("./assets/pricing/mobile/hero.jpg"),
+  },
+
+  buttons: {
+    a: "Monthly",
+    b: "Yearly",
+  },
+
+  subscriptions: [
+    {
+      title: "Basic",
+      description:
+        "Includes basic usage of our platform. Recommended for new and aspiring photographers.",
+      pricePerMonth: "$19.00 per month",
+      pricePerYearly: "$190.00 per year",
+      button: "Pick Plan",
+    },
+    {
+      title: "Pro",
+      description:
+        "More advanced features available. Recommended for photography veterans and professionals.",
+      pricePerMonth: "$39.00 per month",
+      pricePerYearly: "$390.00 per year",
+      button: "Pick Plan",
+    },
+    {
+      title: "Business",
+      description:
+        "Additional features available such as more detailed metrics. Recommended for business owners.",
+      pricePerMonth: "$99.00 per month",
+      pricePerYearly: "$990.00 per year",
+      button: "Pick Plan",
+    },
+  ],
+
+  midTitle: {
+    title: "compare",
+    featureTitle: "The Features",
+  },
+
+  featureBanners: [
+    {
+      posting: "Unlimited Story Posting",
+      a: "basic",
+      b: "pro",
+      c: "business",
+      img: check,
+    },
+
+    {
+      posting: "Unlimited Photo Upload",
+      a: "basic",
+      b: "pro",
+      c: "business",
+      img: check,
+    },
+
+    {
+      posting: "Embedding Custom Content",
+      a: "basic",
+      b: "pro",
+      c: "business",
+      img: check,
+    },
+    {
+      posting: "Customize Metadata",
+      a: "basic",
+      b: "pro",
+      c: "business",
+      img: check,
+    },
+
+    {
+      posting: "Advanced Metrics",
+      a: "basic",
+      b: "pro",
+      c: "business",
+      img: check,
+    },
+
+    {
+      posting: "Photo Downloads",
+      a: "basic",
+      b: "pro",
+      c: "business",
+      img: check,
+    },
+
+    {
+      posting: "Search Engine Indexing",
+      a: "basic",
+      b: "pro",
+      c: "business",
+      img: check,
+    },
+    {
+      posting: "Custom Analytics",
+      a: "basic",
+      b: "pro",
+      c: "business",
+      img: check,
+    },
+  ],
 };

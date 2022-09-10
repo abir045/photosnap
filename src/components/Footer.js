@@ -25,7 +25,7 @@ const Footer = () => {
           />
 
           {/* links */}
-          <ul className="hidden text-xs text-white font-bold uppercase tracking-[2px] md:mt-10 lg:mt-0 md:ml-[-62%]  md:flex  md:space-x-4 lg:space-x-0 lg:space-y-10  lg:flex lg:flex-col">
+          <ul className="hidden text-xs text-white font-bold uppercase tracking-[2px] md:mt-10 lg:mt-0 md:ml-[-62%] lg:ml-5   md:flex  md:space-x-4 lg:space-x-0 lg:space-y-10  lg:flex lg:flex-col">
             <li className="hover:opacity-30">home</li>
             <li className="hover:opacity-30">stories</li>
             <li className="hover:opacity-30">features</li>
