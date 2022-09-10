@@ -19,7 +19,18 @@ const Footer = () => {
       <div className="flex flex-col space-y-8 md:space-y-5 ">
         <div className="hidden my-7 md:flex md:justify-between md:mx-[5%]">
           {/* logo */}
-          <img className="flex text-white w-[170px] mb-2" src={logo} />
+          <img
+            className="flex text-white w-[15%] h-[5%] md:w-[170px]"
+            src={logo}
+          />
+
+          {/* links */}
+          <ul className="hidden text-xs text-white font-bold uppercase tracking-[2px] md:mt-10 lg:mt-0 md:ml-[-62%]  md:flex  md:space-x-4 lg:space-x-0 lg:space-y-10  lg:flex lg:flex-col">
+            <li className="hover:opacity-30">home</li>
+            <li className="hover:opacity-30">stories</li>
+            <li className="hover:opacity-30">features</li>
+            <li className="hover:opacity-30">pricing</li>
+          </ul>
           {/* button */}
           <div className="flex space-x-3">
             <button className="flex text-xs font-bold uppercase text-white tracking-[2px] hover:underline">
@@ -29,24 +40,21 @@ const Footer = () => {
           </div>
         </div>
 
-        <ul className="hidden text-xs text-white font-bold uppercase tracking-[2px] md:space-x-5 md:mx-[5%] md:pb-[5%] md:flex">
-          <li className="hover:opacity-30">home</li>
-          <li className="hover:opacity-30">stories</li>
-          <li className="hover:opacity-30">features</li>
-          <li className="hover:opacity-30">pricing</li>
-        </ul>
-
-        <div className="hidden  space-x-4  md:pb-0 pb-[15%] md:mx-[5%] md:justify-between md:flex">
+        <div className="hidden  space-x-4   pb-[15%] md:mx-[5%] md:justify-between md:flex ">
+          {/*social icons container */}
           <div className="flex space-x-3">
             {/* fb logo */}
             <div className="flex relative">
-              <img className="absolute top-0  hover:opacity-0" src={Facebook} />
+              <img
+                className="absolute  h-full w-full top-0  hover:opacity-0"
+                src={Facebook}
+              />
               <img className="hover:opacity-100" src={fbHover} />
             </div>
             {/* youtube logo */}
             <div className="flex relative">
               <img
-                className="absolute top-0  hover:opacity-0 cursor-pointer"
+                className="absolute top-0 h-full w-full  hover:opacity-0 cursor-pointer"
                 src={youtubeHover}
               />
               <img className="hover:opacity-100" src={youtube} />
@@ -55,7 +63,7 @@ const Footer = () => {
             {/* twitter logo */}
             <div className="flex relative">
               <img
-                className="absolute top-0  hover:opacity-0"
+                className="absolute top-0 h-full w-full  hover:opacity-0"
                 src={twitterHover}
               />
               <img className=" hover:opacity-100" src={twitter} />
@@ -63,7 +71,7 @@ const Footer = () => {
 
             <div className="flex relative">
               <img
-                className="absolute top-0  hover:opacity-0"
+                className="absolute top-0 h-full w-full hover:opacity-0"
                 src={pinterestHover}
               />
               <img className="hover:opacity-100" src={pinterest} />
