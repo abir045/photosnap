@@ -91,7 +91,7 @@ const Home = () => {
             <p className="absolute md:bottom-[23%]  mt-[90%] pt-[20%]  ml-[10%] md:ml-[3%] mx-[2%] text-sm  text-white">
               {item.photographer}
             </p>
-            <hr className="absolute md:w-[20%] mt-[120%]  z-10  ml-[10%] md:ml-[3%] w-[80%] md:bottom-[15%]  mx-[2%] border-white opacity-50 border-1 " />
+            <hr className="absolute md:w-[20%] mt-[120%]  z-10  ml-[10%] md:ml-[3%] w-[80%] md:bottom-[15%]  mx-[2%] border-white opacity-50 border " />
             <button className="absolute text-xs md:bottom-[5%] mt-[95%] pt-[30%] ml-[10%] md:ml-[3%]  mx-[2%]  text-white uppercase">
               {item.button}
             </button>

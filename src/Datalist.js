@@ -352,7 +352,9 @@ export const PricingContent = {
       a: "basic",
       b: "pro",
       c: "business",
-      img: check,
+      imgA: check,
+      imgB: check,
+      imgC: check,
     },
 
     {
@@ -360,7 +362,9 @@ export const PricingContent = {
       a: "basic",
       b: "pro",
       c: "business",
-      img: check,
+      imgA: check,
+      imgB: check,
+      imgC: check,
     },
 
     {
@@ -368,14 +372,18 @@ export const PricingContent = {
       a: "basic",
       b: "pro",
       c: "business",
-      img: check,
+      imgA: "",
+      imgB: check,
+      imgC: check,
     },
     {
       posting: "Customize Metadata",
       a: "basic",
       b: "pro",
       c: "business",
-      img: check,
+      imgA: "",
+      imgB: check,
+      imgC: check,
     },
 
     {
@@ -383,7 +391,9 @@ export const PricingContent = {
       a: "basic",
       b: "pro",
       c: "business",
-      img: check,
+      imgA: "",
+      imgB: "",
+      imgC: check,
     },
 
     {
@@ -391,7 +401,10 @@ export const PricingContent = {
       a: "basic",
       b: "pro",
       c: "business",
-      img: check,
+
+      imgA: "",
+      imgB: "",
+      imgC: check,
     },
 
     {
@@ -399,14 +412,26 @@ export const PricingContent = {
       a: "basic",
       b: "pro",
       c: "business",
-      img: check,
+      imgA: "",
+      imgB: "",
+      imgC: check,
     },
     {
       posting: "Custom Analytics",
       a: "basic",
       b: "pro",
       c: "business",
-      img: check,
+      imgA: "",
+      imgB: "",
+      imgC: check,
     },
   ],
+
+  betaBanner: {
+    title: "We're in Beta. Get your invite today!",
+    button: "Get an invite",
+    img: require("./assets/shared/desktop/bg-beta.jpg"),
+    imgTab: require("./assets/shared/tablet/bg-beta.jpg"),
+    imgMobile: require("./assets/shared/mobile/bg-beta.jpg"),
+  },
 };
