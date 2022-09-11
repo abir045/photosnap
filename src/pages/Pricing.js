@@ -87,7 +87,7 @@ const Pricing = () => {
                   <span>{item.b}</span>
                   <span>{item.c}</span>
                 </div>
-                <div className="flex flex-row justify-between mr-7 my-1">
+                <div className="flex flex-row justify-between  my-1">
                   <img src={item.imgA} />
                   <img src={item.imgB} />
                   <img src={item.imgC} />
