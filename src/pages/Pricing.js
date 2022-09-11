@@ -15,9 +15,10 @@ const Pricing = () => {
 
   return (
     <div>
-      <div className="flex flex-col bg-black">
-        <img src={banner.imgMb} />
-        <div className="flex flex-col my-[15%] mx-[9%]">
+      <div className="flex flex-col bg-black md:flex-row-reverse">
+        <img className="flex md:hidden" src={banner.imgMb} />
+        <img className="md:w-[30%]" src={banner.imgTab} />
+        <div className="flex flex-col my-[15%] mx-[9%] md:w-[70%]">
           <h1 className="text-[32px] my-[5%] text-white uppercase font-bold tracking-[3.33px]">
             {banner.title}
           </h1>
@@ -36,36 +37,61 @@ const Pricing = () => {
 
       <div className="flex flex-col">
         {subscriptions.map((item, id) => (
-          <div
-            style={{
-              backgroundColor: id % 2 !== 0 ? "black" : "#f5f5f5",
-              color: id % 2 !== 0 ? "white" : "black",
-            }}
-            className="flex flex-col space-y-2 my-[3%] py-[10%] text-center bg-[#f5f5f5] mx-[8%]"
-          >
-            <h1 className="text-[24px]  font-bold pb-2">{item.title}</h1>
-            <p className="text-[15px] mx-[5%] pb-5 opacity-60">
-              {item.description}
-            </p>
-            <div className="flex flex-col pb-[10%]">
+          <>
+            <div
+              style={{
+                backgroundColor: id % 2 !== 0 ? "black" : "#f5f5f5",
+                color: id % 2 !== 0 ? "white" : "black",
+              }}
+              className="flex flex-col space-y-2 my-[3%] py-[10%]  md:pt-9 md:pb-4 text-center bg-[#f5f5f5] mx-[8%] md:flex-row"
+            >
+              <div className="flex flex-col ">
+                <h1 className="text-[24px]  font-bold pb-2 md:text-left md:mx-[8%]">
+                  {item.title}
+                </h1>
+                <p className="text-[15px] mx-[5%] pb-5 opacity-60 md:text-left md:mx-[8%] md:pb-0 md:w-[55%]">
+                  {item.description}
+                </p>
+                <button
+                  style={{
+                    backgroundColor: id % 2 !== 0 ? "#f5f5f5" : "black",
+                    color: id % 2 !== 0 ? "black" : "white",
+                  }}
+                  className="flex text-white bg-black uppercase text-xs tracking-[2px] font-bold justify-center my-[10%] py-3 md:my-[7%] md:mx-[8%] md:w-[278px]"
+                >
+                  {item.button}
+                </button>
+              </div>
+
+              <div className="flex flex-col pb-[10%] mr-[5%]">
+                <span className="text-[40px]  uppercase tracking-[4.16px] font-bold">
+                  {item.pricePerMonth}
+                </span>
+                <p className="flex justify-center  text-[15px] opacity-60">
+                  per month
+                </p>
+              </div>
+
+              <button
+                style={{
+                  backgroundColor: id % 2 !== 0 ? "#f5f5f5" : "black",
+                  color: id % 2 !== 0 ? "black" : "white",
+                }}
+                className="flex text-white bg-black uppercase text-xs tracking-[2px] font-bold justify-center my-[10%] py-3 md:hidden mx-[15%]"
+              >
+                {item.button}
+              </button>
+            </div>
+
+            {/* <div className="hidden md:flex md:flex-col">
               <span className="text-[40px]  uppercase tracking-[4.16px] font-bold">
                 {item.pricePerMonth}
               </span>
               <p className="flex justify-center  text-[15px] opacity-60">
                 per month
               </p>
-            </div>
-
-            <button
-              style={{
-                backgroundColor: id % 2 !== 0 ? "#f5f5f5" : "black",
-                color: id % 2 !== 0 ? "black" : "white",
-              }}
-              className="flex text-white bg-black uppercase text-xs tracking-[2px] font-bold justify-center my-[10%] py-3  mx-[15%]"
-            >
-              {item.button}
-            </button>
-          </div>
+            </div> */}
+          </>
         ))}
       </div>
 
