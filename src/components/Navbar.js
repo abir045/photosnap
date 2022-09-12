@@ -16,8 +16,10 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="hidden md:flex justify-around my-5 items-center">
-        <img className="flex" src={logo} />
+      <div className="hidden md:flex justify-around my-4 items-center">
+        
+        <a href="/"><img className="flex" src={logo} /> </a>
+        
         <ul className="flex space-x-10 text-xs font-bold uppercase  ">
           <li className="hover:text-[#dfdfdf] cursor-pointer">
             <a href="/stories">stories</a>

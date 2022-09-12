@@ -5,23 +5,26 @@ const Home = () => {
   const { stories, footerBanners } = homeContent;
   return (
     <div>
-      <div className="flex flex-col-reverse justify-between bg-black md:flex-row">
-        <div className="flex flex-col   items-center my-12   p-4 lg:w-[40%] mt-[10%] md:w-[70%]  ">
-          <h1 className="flex text-white w-full text-4xl md:text-[40px]  uppercase font-bold leading-[48px] p-4  md:w-[60%] lg:ml-[40%] lg:w-[90%]  md:mr-[35%]">
+      <div className="flex flex-col-reverse justify-between bg-black md:flex-row h-[600px]">
+       
+        <div className="flex flex-col  items-center my-10  p-4 xl:w-[40%] mt-[10%] md:w-[70%]">
+          
+          <h1 className="flex text-white w-full text-4xl md:text-[40px]  uppercase font-bold leading-[48px] p-4  md:w-[60%] xl:ml-[40%] xl:w-[75%]  md:mr-[35%]">
             {homeContent.banner.heading}
           </h1>
-          <p className="flex md:text-base w-full p-5 text-[#dfdfdf] opacity-60 md:mr-[25%] md:w-[70%] lg:w-[95%] lg:ml-[33%]">
+          <p className="flex md:text-[15px] leading-[25px] w-full p-5 text-[#dfdfdf] opacity-60 md:mr-[25%] md:w-[70%] md:mb-3 xl:w-[80%] xl:ml-[33%]">
             {homeContent.banner.body}
           </p>
-          <button className="flex w-full ml-[10%]  text-white font-bold uppercase text-xs lg:ml-[25%] xl:ml-[20%]  md:ml-[12%]">
+          <button className="flex w-full ml-[10%]  text-white font-bold uppercase text-xs zl:ml-[25%] xl:ml-[35%]  md:ml-[12%]">
             {homeContent.banner.button}
           </button>
         </div>
-        <div className="hidden lg:flex lg:w-[60%]">
-          <img className="w-full" src={homeContent.banner.img} />
+        
+        <div className="hidden xl:flex xl:w-[60%]">
+          <img className="w-full h-full" src={homeContent.banner.img} />
         </div>
         <div className="flex  flex-row md:hidden">
-          <img className="w-full" src={homeContent.banner.imgMobile} />
+          <img className="w-full h-full" src={homeContent.banner.imgMobile} />
         </div>
         <div className="hidden md:flex md:w-[30%] lg:hidden">
           <img className="w-full" src={homeContent.banner.imgTab} />
@@ -29,7 +32,7 @@ const Home = () => {
       </div>
 
       {/* stories */}
-      <div className="flex flex-col justify-between bg-white md:flex-row">
+      <div className="flex flex-col justify-between bg-white md:flex-row xl:h-[560px]">
         <div className="hidden  lg:flex w-[60%]">
           <img className="w-full" src={homeContent.bannerStories.img} />
         </div>
@@ -54,7 +57,7 @@ const Home = () => {
       </div>
 
       {/* designed for everyone */}
-      <div className="flex flex-col-reverse justify-between  bg-white md:flex-row">
+      <div className="flex flex-col-reverse justify-between  bg-white md:flex-row xl:h-[570px]">
         <div className="flex flex-col  items-center w-full my-12  lg:w-[40%] mt-[10%] ">
           <h1 className="text-black text-[32px] uppercase font-bold leading-[40px] p-4 w-full md:w-[70%] ml-[10%] md:mr-[30%] ">
             {homeContent.bannerDesign.heading}
@@ -77,13 +80,13 @@ const Home = () => {
         </div>
       </div>
       {/* stories cards */}
-      <div className="flex flex-col relative md:flex-row">
+      <div className="flex flex-col relative md:flex-row  ">
         {stories.map((item) => (
-          <div className="flex flex-col w-full ">
-            <img className="w-full" src={item.img} />
+          <div className="flex flex-col w-full">
+            <img className="w-full xl:h-[470px] " src={item.img} />
             <h2
               className="absolute text-lg mt-[85%] pt-[20%] ml-[10%] md:bottom-[30%] md:ml-[3%]
-              font-bold   text-white uppercase"
+              font-bold  text-white uppercase"
             >
               {" "}
               {item.title}
@@ -92,7 +95,7 @@ const Home = () => {
               {item.photographer}
             </p>
             <hr className="absolute md:w-[20%] mt-[120%]  z-10  ml-[10%] md:ml-[3%] w-[80%] md:bottom-[15%]  mx-[2%] border-white opacity-50 border " />
-            <button className="absolute text-xs md:bottom-[5%] mt-[95%] pt-[30%] ml-[10%] md:ml-[3%]  mx-[2%]  text-white uppercase">
+            <button className="absolute text-xs md:bottom-[5%] xl:bottom-[7%] mt-[95%] pt-[30%] ml-[10%] md:ml-[3%] mx-[2%] text-white uppercase">
               {item.button}
             </button>
           </div>
@@ -101,18 +104,18 @@ const Home = () => {
 
       {/* footer banners */}
 
-      <div className="md:flex space-x-5 items-center text-center my-10 mx-[5%]">
+      <div className="md:flex space-x-5 items-center text-center xl:mx-[10%]  mx-[5%]">
         {footerBanners.map((item) => {
           return (
-            <div className="flex flex-col">
-              <div className="mt-[30%] mb-[20%]">
+            <div className="flex flex-col xl:my-5 xl:mt-[5%]">
+              <div className="mt-[30%] xl:mt-[15%] mb-[5%]">
                 <img src={item.img} className="mx-auto w-[72px] h-[72px]" />
               </div>
 
-              <h1 className="mt-[5%] font-bold text-lg mb-[10%]">
+              <h1 className="mt-[5%] font-bold text-lg mb-[5%]">
                 {item.title}
               </h1>
-              <p className="text-base opacity-60">{item.description}</p>
+              <p className="flex text-[15px] leading-[25px]  opacity-60 xl:w-[80%] xl:mx-auto xl:mb-[25%]">{item.description}</p>
             </div>
           );
         })}
