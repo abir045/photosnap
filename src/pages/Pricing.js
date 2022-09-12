@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { PricingContent } from "../Datalist";
 import logo from "../assets/pricing/desktop/Group.svg";
 import arrow from "../assets/shared/desktop/arrow.svg";
@@ -12,6 +12,12 @@ const Pricing = () => {
     featureBanners,
     betaBanner,
   } = PricingContent;
+
+  const [toggle, setToggle] = useState(false);
+
+  const switchprice = () => {
+    setToggle(!toggle);
+  };
 
   return (
     <div>
@@ -37,7 +43,7 @@ const Pricing = () => {
       <div className="flex mx-[15%] justify-between  my-[10%] xl:mt-[8%] xl:mb-10 xl:mx-[40%]">
         <span className="flex text-black text-lg font-bold ">{buttons.a}</span>
         <button className="flex">
-          <img src={logo} />
+          <img onClick={switchprice} src={logo} />
         </button>
         <span className="flex text-black text-lg font-bold">{buttons.b}</span>
       </div>
@@ -72,21 +78,32 @@ const Pricing = () => {
               </div>
 
               {/* price-container */}
-              <div className="flex flex-col pb-[10%] mr-[5%]">
-                <span className="text-[40px]  uppercase tracking-[4.16px] font-bold">
-                  {item.pricePerMonth}
-                </span>
-                <p className="flex justify-center  text-[15px] opacity-60">
-                  per month
-                </p>
-              </div>
+              {toggle ? (
+                <div className="flex flex-col pb-[10%] mr-[5%]">
+                  <span className="text-[40px]  uppercase tracking-[4.16px] font-bold">
+                    {item.pricePerYearly}
+                  </span>
+                  <p className="flex justify-center  text-[15px] opacity-60">
+                    {item.periodY}
+                  </p>
+                </div>
+              ) : (
+                <div className="flex flex-col pb-[10%] mr-[5%]">
+                  <span className="text-[40px]  uppercase tracking-[4.16px] font-bold">
+                    {item.pricePerMonth}
+                  </span>
+                  <p className="flex justify-center  text-[15px] opacity-60">
+                    {item.periodM}
+                  </p>
+                </div>
+              )}
 
               <button
                 style={{
                   backgroundColor: id % 2 !== 0 ? "#f5f5f5" : "black",
                   color: id % 2 !== 0 ? "black" : "white",
                 }}
-                className="flex text-white bg-black uppercase text-xs tracking-[2px] font-bold justify-center my-[10%] py-3 md:hidden  mx-[15%]  lg:mx-10 lg:flex"
+                className="flex cursor-pointer text-white bg-black uppercase text-xs tracking-[2px] font-bold justify-center my-[10%] py-3 md:hidden  mx-[15%]  lg:mx-10 lg:flex"
               >
                 {item.button}
               </button>
