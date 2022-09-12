@@ -111,18 +111,18 @@ const Home = () => {
 
       {/* footer banners */}
 
-      <div className="md:flex space-x-5 items-center text-center xl:mx-[10%]  mx-[5%]">
+      <div className="flex md:flex-col md:space-y-12 xl:flex-row xl:space-x-5 items-center text-center xl:mx-[10%] md:mb-[15%]  mx-[5%]">
         {footerBanners.map((item) => {
           return (
-            <div className="flex flex-col xl:my-5 xl:mt-[5%]">
-              <div className="mt-[30%] xl:mt-[15%] mb-[5%]">
-                <img src={item.img} className="mx-auto w-[72px] h-[72px]" />
+            <div className="flex flex-col space-y-1 xl:my-5  xl:mt-[5%] md:mt-[15%] md:mb-[5%]">
+              <div className="mt-[30%] xl:mt-[15%] md:mt-2 md:mb-2 mb-[5%] ">
+                <img src={item.img} className="mx-auto w-[10%] h-[5%]" />
               </div>
 
-              <h1 className="mt-[5%] font-bold text-lg mb-[5%]">
+              <h1 className="mt-[5%] font-bold text-lg mb-[5%] md:pb-2 md:pt-[5%] ">
                 {item.title}
               </h1>
-              <p className="flex text-[15px] leading-[25px]  opacity-60 xl:w-[80%] xl:mx-auto xl:mb-[25%]">{item.description}</p>
+              <p className="flex text-[15px] leading-[25px]  opacity-60 xl:w-[80%] md:w-[80%] md:mx-auto xl:mx-auto xl:mb-[25%]">{item.description}</p>
             </div>
           );
         })}
