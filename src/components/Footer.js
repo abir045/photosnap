@@ -14,7 +14,7 @@ import instagramHover from "../assets/shared/desktop/instagramHover.svg";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col py-5 md:py-[5%]  bg-black  justify-between">
+    <div className="flex flex-col py-5 md:py-[15%] xl:py-10  bg-black  justify-between">
       {/* tablet */}
       <div className="flex flex-col space-y-8 md:space-y-5 ">
         <div className="hidden my-7 md:flex md:justify-between md:mx-[5%]">
@@ -25,7 +25,7 @@ const Footer = () => {
           />
 
           {/* links */}
-          <ul className="hidden text-xs text-white font-bold uppercase tracking-[2px] md:mt-10 lg:mt-0 md:ml-[-62%] lg:ml-5   md:flex  md:space-x-4 lg:space-x-0 lg:space-y-10  lg:flex lg:flex-col">
+          <ul className="hidden text-xs text-white font-bold uppercase tracking-[2px] md:mt-10 lg:mt-0 md:ml-[-62%] lg:ml-5  md:flex md:space-x-4 lg:space-x-0 xl:space-y-5  lg:flex lg:flex-col">
             <li className="hover:opacity-30">home</li>
             <li className="hover:opacity-30">stories</li>
             <li className="hover:opacity-30">features</li>
@@ -40,7 +40,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="hidden  space-x-4   pb-[15%] md:mx-[5%] md:justify-between md:flex ">
+        <div className="hidden  space-x-4  pb-[15%] xl:pb-5 md:mx-[5%] md:justify-between md:flex ">
           {/*social icons container */}
           <div className="flex space-x-3">
             {/* fb logo */}

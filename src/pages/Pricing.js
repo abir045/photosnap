@@ -42,7 +42,7 @@ const Pricing = () => {
         <span className="flex text-black text-lg font-bold">{buttons.b}</span>
       </div>
 
-      <div className="flex flex-col  xl:flex-row xl:mx-[10%]">
+      <div className="flex flex-col  xl:flex-row xl:justify-center">
         {subscriptions.map((item, id) => (
           <>
             <div
@@ -99,9 +99,9 @@ const Pricing = () => {
         Compare
       </h1>
 
-      <div className="flex flex-col mx-[7%] ">
+      <div className="flex flex-col mx-[7%] xl:mx-[25%] ">
         <div className="md:flex">
-          <h1 className="flex text-xs font-bold uppercase mt-[15%] md:mt-[10%] tracking-[2px] md:w-full">
+          <h1 className="flex text-xs font-bold uppercase mt-[15%] md:mt-[10%] tracking-[2px] md:w-full []">
             {midTitle.featureTitle}
           </h1>
           <div className="hidden md:flex md:justify-end md:mt-[10%] text-xs font-bold  uppercase tracking-[2px] space-x-[20%] w-full">
