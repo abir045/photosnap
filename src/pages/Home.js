@@ -82,10 +82,14 @@ const Home = () => {
         </div>
       </div>
       {/* stories cards */}
-      <div className="flex flex-col relative md:grid md:grid-rows-2 md:grid-cols-2  xl:grid-cols-4 xl:grid-rows-1">
+      <div className="flex flex-col h-full relative md:grid md:grid-rows-2 md:grid-cols-2 xl:grid-cols-4 xl:grid-rows-1">
         {stories.map((item) => (
-          <div className="flex flex-col w-full relative xl:h-[500px] h-[375px] md:h-[500px]">
-            <img className="w-full hover:-translate-y-5 " src={item.img} />
+          <div className="flex flex-col relative   ">
+            <img
+              className="w-full h-[375px] xl:h-[500px]  md:h-[500px] hover:-translate-y-5 "
+              src={item.img}
+            />
+
             <h2 className="absolute text-lg mt-[40%] pt-[20%] ml-[10%] md:bottom-[25%] xl:bottom-[25%] md:ml-[10%] font-bold  text-white">
               {" "}
               {item.title}
@@ -107,12 +111,12 @@ const Home = () => {
 
       {/* footer banners */}
 
-      <div className="flex flex-col mb-[15%] md:flex-col md:space-y-12 xl:flex-row xl:space-x-5 items-center text-center xl:mx-[10%] md:mb-[15%]  mx-[5%]">
+      <div className="flex flex-col  mb-[25%] md:flex-col md:my-[5%] md:space-y-12 xl:flex-row xl:space-x-5 items-center text-center xl:mx-[10%] md:mb-[15%]  mx-[5%]">
         {footerBanners.map((item) => {
           return (
             <div className="flex flex-col space-y-1 xl:my-5  xl:mt-[5%] md:mt-[15%] md:mb-[10%]">
-              <div className="mt-[30%] xl:mt-[15%] md:mt-2 md:mb-2 mb-[5%] ">
-                <img src={item.img} className="mx-auto w-[10%] h-[5%] " />
+              <div className="mt-[30%] xl:mt-[15%] md:mt-2 md:mb-2 mb-[10%] ">
+                <img src={item.img} className="mx-auto w-[20%] h-[5%] " />
               </div>
 
               <h1 className="mt-[5%] font-bold text-lg mb-[5%] md:pb-2 md:pt-[5%] ">
