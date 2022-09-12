@@ -17,8 +17,15 @@ const Pricing = () => {
     <div>
       <div className="flex flex-col bg-black md:flex-row-reverse">
         <img className="flex md:hidden" src={banner.imgMb} />
-        <img className="md:w-[30%]" src={banner.imgTab} />
-        <div className="flex flex-col my-[15%] mx-[9%] md:w-[70%]">
+        <img
+          className="hidden md:flex md:w-[30%] lg:hidden"
+          src={banner.imgTab}
+        />
+        <img
+          className="hidden md:hidden lg:flex lg:w-[60%] "
+          src={banner.img}
+        />
+        <div className="flex flex-col my-[15%] mx-[9%] md:w-[70%] lg:w-[40%]">
           <h1 className="text-[32px] my-[5%] text-white uppercase font-bold tracking-[3.33px]">
             {banner.title}
           </h1>
@@ -27,7 +34,7 @@ const Pricing = () => {
           </p>
         </div>
       </div>
-      <div className="flex mx-[15%] justify-between  my-[10%]">
+      <div className="flex mx-[15%] justify-between  my-[10%] xl:mt-[8%] xl:mb-10 xl:mx-[40%]">
         <span className="flex text-black text-lg font-bold ">{buttons.a}</span>
         <button className="flex">
           <img src={logo} />
@@ -35,7 +42,7 @@ const Pricing = () => {
         <span className="flex text-black text-lg font-bold">{buttons.b}</span>
       </div>
 
-      <div className="flex flex-col">
+      <div className="flex flex-col  xl:flex-row xl:mx-[10%]">
         {subscriptions.map((item, id) => (
           <>
             <div
@@ -43,26 +50,28 @@ const Pricing = () => {
                 backgroundColor: id % 2 !== 0 ? "black" : "#f5f5f5",
                 color: id % 2 !== 0 ? "white" : "black",
               }}
-              className="flex flex-col space-y-2 my-[3%] py-[10%]  md:pt-9 md:pb-4 text-center bg-[#f5f5f5] mx-[8%] md:flex-row"
+              className="flex flex-col space-y-2  my-[3%] py-[10%]  md:pt-9 md:pb-2 text-center bg-[#f5f5f5] mx-[5%] md:flex-row  md:my-3 xl:space-y-10  xl:flex-col xl:mx-2 xl:py-10 "
             >
-              <div className="flex flex-col ">
-                <h1 className="text-[24px]  font-bold pb-2 md:text-left md:mx-[8%]">
+              <div className="flex flex-col  xl:mt-10 md:space-x-10 xl:space-y-6 xl:py-5 xl:w-[350px] ">
+                <h1 className="text-[24px] font-bold pb-2 md:text-left md:mx-[8%] lg:text-center ">
                   {item.title}
                 </h1>
-                <p className="text-[15px] mx-[5%] pb-5 opacity-60 md:text-left md:mx-[8%] md:pb-0 md:w-[55%]">
+                <p className="flex text-[15px] mx-[5%] pb-5 opacity-60 md:text-left md:mx-[8%] md:pb-0 md:w-[55%] xl:text-center xl:w-[80%]">
                   {item.description}
                 </p>
+                {/* button hidden on desktop */}
                 <button
                   style={{
                     backgroundColor: id % 2 !== 0 ? "#f5f5f5" : "black",
                     color: id % 2 !== 0 ? "black" : "white",
                   }}
-                  className="flex text-white bg-black uppercase text-xs tracking-[2px] font-bold justify-center my-[10%] py-3 md:my-[7%] md:mx-[8%] md:w-[278px]"
+                  className="hidden text-white bg-black uppercase text-xs tracking-[2px] font-bold justify-center my-[10%] py-3 md:my-[7%] md:mx-[8%] md:w-[278px] md:flex lg:hidden"
                 >
                   {item.button}
                 </button>
               </div>
 
+              {/* price-container */}
               <div className="flex flex-col pb-[10%] mr-[5%]">
                 <span className="text-[40px]  uppercase tracking-[4.16px] font-bold">
                   {item.pricePerMonth}
@@ -77,50 +86,58 @@ const Pricing = () => {
                   backgroundColor: id % 2 !== 0 ? "#f5f5f5" : "black",
                   color: id % 2 !== 0 ? "black" : "white",
                 }}
-                className="flex text-white bg-black uppercase text-xs tracking-[2px] font-bold justify-center my-[10%] py-3 md:hidden mx-[15%]"
+                className="flex text-white bg-black uppercase text-xs tracking-[2px] font-bold justify-center my-[10%] py-3 md:hidden  mx-[15%]  lg:mx-10 lg:flex"
               >
                 {item.button}
               </button>
             </div>
-
-            {/* <div className="hidden md:flex md:flex-col">
-              <span className="text-[40px]  uppercase tracking-[4.16px] font-bold">
-                {item.pricePerMonth}
-              </span>
-              <p className="flex justify-center  text-[15px] opacity-60">
-                per month
-              </p>
-            </div> */}
           </>
         ))}
       </div>
 
-      <div className="flex flex-col mx-[7%]">
-        <h1 className="text-xs font-bold uppercase mt-[15%] tracking-[2px]">
-          {midTitle.featureTitle}
-        </h1>
+      <h1 className="hidden md:flex md:mt-[10%]  justify-center text-[40px]  uppercase font-bold tracking-[4.16px]">
+        Compare
+      </h1>
+
+      <div className="flex flex-col mx-[7%] ">
+        <div className="md:flex">
+          <h1 className="flex text-xs font-bold uppercase mt-[15%] md:mt-[10%] tracking-[2px] md:w-full">
+            {midTitle.featureTitle}
+          </h1>
+          <div className="hidden md:flex md:justify-end md:mt-[10%] text-xs font-bold  uppercase tracking-[2px] space-x-[20%] w-full">
+            <span className="flex w-full">{featureBanners[0].a}</span>
+            <span className="flex w-full">{featureBanners[0].b}</span>
+            <span className="flex w-full">{featureBanners[0].c}</span>
+          </div>
+        </div>
+
         <hr className="border-x border-solid  border-[#000000] my-5" />
-        <div className="flex flex-col">
+        <div className="flex flex-col md:my-[10%]">
           {featureBanners.map((item) => (
-            <div className="flex flex-col">
-              <h3 className="text-xs tracking-[2px] uppercase font-bold text-black">
-                {item.posting}
-              </h3>
-              {/* features container */}
-              <div className="flex flex-col my-4">
-                <div className="flex flex-row text-[10px] font-bold uppercase traking-[1.66px] opacity-50  justify-between">
-                  <span>{item.a}</span>
-                  <span>{item.b}</span>
-                  <span>{item.c}</span>
+            <>
+              <div className="flex flex-col md:flex-row md:justify-between ">
+                <h3 className="text-xs tracking-[2px] uppercase font-bold text-black md:w-full">
+                  {item.posting}
+                </h3>
+                {/* features container */}
+                <div className="flex flex-col my-4 md:my-0 md:justify-between md:w-full">
+                  <div className="flex flex-row text-[10px] font-bold uppercase traking-[1.66px] opacity-50  justify-between md:hidden">
+                    <span>{item.a}</span>
+                    <span>{item.b}</span>
+                    <span>{item.c}</span>
+                  </div>
+                  <div className="flex flex-row justify-between md:space-x-20 my-1">
+                    <img src={item.imgA} />
+                    <img src={item.imgB} />
+                    <img src={item.imgC} />
+                  </div>
+                  <hr className="border-x border-solid  border-[#dfdfdf] md:hidden my-5" />
                 </div>
-                <div className="flex flex-row justify-between  my-1">
-                  <img src={item.imgA} />
-                  <img src={item.imgB} />
-                  <img src={item.imgC} />
-                </div>
-                <hr className="border-x border-solid  border-[#dfdfdf] my-5" />
               </div>
-            </div>
+              <div className="flex flex-col">
+                <hr className="hidden md:flex border-x border-solid  border-[#dfdfdf]  my-5" />
+              </div>
+            </>
           ))}
         </div>
       </div>
