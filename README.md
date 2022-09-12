@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://your-solution-url.com)
+-
 - Live Site URL: (https://photosnap-abir045.vercel.app/)
 
 ## My process
@@ -47,6 +47,6 @@ Working with Flex box and grid together.
 
 ## Author
 
-<!-- - Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Website - [Salekin Imran](https://dev-salekin.vercel.app/)
+<!-- - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
 - Twitter - [@yourusername](https://www.twitter.com/yourusername) -->
