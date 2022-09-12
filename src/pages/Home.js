@@ -16,7 +16,7 @@ const Home = () => {
           <p className="flex md:text-[15px] leading-[25px] w-full p-5 text-[#dfdfdf] opacity-60 md:mr-[10%] md:w-[70%] md:mb-3 xl:w-[80%] xl:ml-[23%]">
             {homeContent.banner.body}
           </p>
-          <div className="flex space-x-3 w-full md:ml-[8%] xl:ml-[20%]" >
+          <div className="flex space-x-3 w-full md:ml-[8%] xl:ml-[30%]" >
            <button className="flex  ml-[5%]  text-white font-bold uppercase text-xs">
             {homeContent.banner.button}
             
