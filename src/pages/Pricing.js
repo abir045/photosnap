@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { PricingContent } from "../Datalist";
 import logo from "../assets/pricing/desktop/Group.svg";
 import arrow from "../assets/shared/desktop/arrow.svg";
+import group from "../assets/pricing/desktop/GroupSwitch.svg";
 
 const Pricing = () => {
   const {
@@ -42,8 +43,19 @@ const Pricing = () => {
       </div>
       <div className="flex mx-[15%] justify-between  my-[10%] xl:mt-[8%] xl:mb-10 xl:mx-[40%]">
         <span className="flex text-black text-lg font-bold ">{buttons.a}</span>
-        <button className="flex">
-          <img onClick={switchprice} src={logo} />
+
+        <button className="flex relative">
+          <img
+            className="absolute top-0 right-0"
+            style={{ display: toggle ? "block" : "none" }}
+            onClick={() => setToggle(!toggle)}
+            src={group}
+          />
+          <img
+            // style={{ display: toggle ? "none" : "block" }}
+            onClick={() => setToggle(!toggle)}
+            src={logo}
+          />
         </button>
         <span className="flex text-black text-lg font-bold">{buttons.b}</span>
       </div>
