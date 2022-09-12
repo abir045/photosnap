@@ -78,7 +78,9 @@ const Features = () => {
             <img className="flex w-[42px] h-[12px]" src={arrow} />
           </div>
         </div>
-      </div>
+
+
+</div>
     </div>
   );
 };

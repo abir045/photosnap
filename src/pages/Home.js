@@ -1,5 +1,6 @@
 import React from "react";
 import { homeContent } from "../Datalist";
+import arrow from "../assets/shared/desktop/arrow.svg";
 
 const Home = () => {
   const { stories, footerBanners } = homeContent;
@@ -9,15 +10,21 @@ const Home = () => {
        
         <div className="flex flex-col  items-center my-10  p-4 xl:w-[40%] mt-[10%] md:w-[70%]">
           
-          <h1 className="flex text-white w-full text-4xl md:text-[40px]  uppercase font-bold leading-[48px] p-4  md:w-[60%] xl:ml-[40%] xl:w-[75%]  md:mr-[35%]">
+          <h1 className="flex text-white w-full text-4xl md:text-[40px]  uppercase font-bold leading-[48px] p-4  md:w-[70%] xl:ml-[20%] xl:w-[75%]  md:mr-[10%]">
             {homeContent.banner.heading}
           </h1>
-          <p className="flex md:text-[15px] leading-[25px] w-full p-5 text-[#dfdfdf] opacity-60 md:mr-[25%] md:w-[70%] md:mb-3 xl:w-[80%] xl:ml-[33%]">
+          <p className="flex md:text-[15px] leading-[25px] w-full p-5 text-[#dfdfdf] opacity-60 md:mr-[10%] md:w-[70%] md:mb-3 xl:w-[80%] xl:ml-[23%]">
             {homeContent.banner.body}
           </p>
-          <button className="flex w-full ml-[10%]  text-white font-bold uppercase text-xs zl:ml-[25%] xl:ml-[35%]  md:ml-[12%]">
+          <div className="flex space-x-3 w-full md:ml-[8%] xl:ml-[20%]" >
+           <button className="flex  ml-[10%]  text-white font-bold uppercase text-xs">
             {homeContent.banner.button}
+            
           </button>
+          <img className="flex" src={arrow} alt="arrow" />
+          </div>
+          
+          
         </div>
         
         <div className="hidden xl:flex xl:w-[60%]">
