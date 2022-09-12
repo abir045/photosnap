@@ -6,7 +6,7 @@ const Home = () => {
   const { stories, footerBanners } = homeContent;
   return (
     <div>
-      <div className="flex flex-col-reverse justify-between bg-black md:flex-row h-[600px]">
+      <div className="flex flex-col-reverse justify-between bg-black md:flex-row md:h-[600px]">
        
         <div className="flex flex-col  items-center my-10  p-4 xl:w-[40%] mt-[10%] md:w-[70%]">
           
@@ -17,7 +17,7 @@ const Home = () => {
             {homeContent.banner.body}
           </p>
           <div className="flex space-x-3 w-full md:ml-[8%] xl:ml-[20%]" >
-           <button className="flex  ml-[10%]  text-white font-bold uppercase text-xs">
+           <button className="flex  ml-[5%]  text-white font-bold uppercase text-xs">
             {homeContent.banner.button}
             
           </button>
@@ -90,7 +90,7 @@ const Home = () => {
       <div className="flex flex-col relative md:flex-row  ">
         {stories.map((item) => (
           <div className="flex flex-col w-full">
-            <img className="w-full xl:h-[470px] " src={item.img} />
+            <img className="w-full xl:h-[470px] hover:-translate-y-5 " src={item.img} />
             <h2
               className="absolute text-lg mt-[85%] pt-[20%] ml-[10%] md:bottom-[30%] md:ml-[3%]
               font-bold  text-white uppercase"
@@ -102,26 +102,32 @@ const Home = () => {
               {item.photographer}
             </p>
             <hr className="absolute md:w-[20%] mt-[120%]  z-10  ml-[10%] md:ml-[3%] w-[80%] md:bottom-[15%]  mx-[2%] border-white opacity-50 border " />
-            <button className="absolute text-xs md:bottom-[5%] xl:bottom-[7%] mt-[95%] pt-[30%] ml-[10%] md:ml-[3%] mx-[2%] text-white uppercase">
+            
+            <div className="flex mx-[2%] space-x-10 absolute ml-[10%] md:ml-[3%] mt-[95%] pt-[30%] md:bottom-[5%] xl:bottom-[7%]  justify-between">
+            <button className="flex text-xs   text-white uppercase">
               {item.button}
             </button>
+            <img className="flex" src={arrow} alt="arrow" />
+            </div>  
+            
           </div>
         ))}
       </div>
 
       {/* footer banners */}
 
-      <div className="flex md:flex-col md:space-y-12 xl:flex-row xl:space-x-5 items-center text-center xl:mx-[10%] md:mb-[15%]  mx-[5%]">
+      <div className="flex flex-col mb-[15%] md:flex-col md:space-y-12 xl:flex-row xl:space-x-5 items-center text-center xl:mx-[10%] md:mb-[15%]  mx-[5%]">
         {footerBanners.map((item) => {
           return (
             <div className="flex flex-col space-y-1 xl:my-5  xl:mt-[5%] md:mt-[15%] md:mb-[5%]">
               <div className="mt-[30%] xl:mt-[15%] md:mt-2 md:mb-2 mb-[5%] ">
-                <img src={item.img} className="mx-auto w-[10%] h-[5%]" />
+                <img src={item.img} className="mx-auto w-[10%] h-[5%] " />
               </div>
 
               <h1 className="mt-[5%] font-bold text-lg mb-[5%] md:pb-2 md:pt-[5%] ">
                 {item.title}
               </h1>
+              
               <p className="flex text-[15px] leading-[25px]  opacity-60 xl:w-[80%] md:w-[80%] md:mx-auto xl:mx-auto xl:mb-[25%]">{item.description}</p>
             </div>
           );
