@@ -47,18 +47,21 @@ export const homeContent = {
       photographer: "by Benjamin Cruz",
       button: "Read Story",
       img: require("./assets/stories/desktop/cityscapes.jpg"),
+      imgMobile: require("./assets/stories/mobile/cityscapes.jpg"),
     },
     {
       title: "18 Days Voyage",
       photographer: "by Alexei Borodin",
       button: "Read Story",
       img: require("./assets/stories/desktop/18-days-voyage.jpg"),
+      imgMobile: require("./assets/stories/mobile/18-days-voyage.jpg"),
     },
     {
       title: "Architecturals",
       photographer: "by Samantha Brooke",
       button: "Read Story",
       img: require("./assets/stories/desktop/architecturals.jpg"),
+      imgMobile: require("./assets/stories/mobile/architecturals.jpg"),
     },
   ],
 

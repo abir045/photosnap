@@ -17,9 +17,10 @@ const Navbar = () => {
   return (
     <>
       <div className="hidden md:flex justify-around my-4 items-center">
-        
-        <a href="/"><img className="flex" src={logo} /> </a>
-        
+        <a href="/">
+          <img className="flex" src={logo} />{" "}
+        </a>
+
         <ul className="flex space-x-10 text-xs font-bold uppercase  ">
           <li className="hover:text-[#dfdfdf] cursor-pointer">
             <a href="/stories">stories</a>
@@ -36,7 +37,7 @@ const Navbar = () => {
         </button>
       </div>
 
-      <div className="flex mx-[5%] my-5 justify-between items-center relative md:hidden">
+      <div className="flex mx-[5%]  justify-between items-center h-[72px] relative md:hidden">
         <img src={logo} />
         <img
           className="absolute top-0 right-0"
