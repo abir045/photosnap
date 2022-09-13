@@ -7,16 +7,16 @@ const Home = () => {
   const { stories, footerBanners } = homeContent;
   return (
     <div>
-      <div className="flex flex-col-reverse justify-between bg-black md:flex-row">
+      <div className="flex flex-col-reverse justify-between bg-black md:flex-row ">
         {/* text banner */}
-        <div className="flex flex-col items-center p-4 xl:w-[40%]  md:w-[70%] h-[419px] md:h-[650px]">
-          <h1 className="flex  text-white w-[90%] text-[32px] mt-[15%] tracking-[3.33px] leading-[40px] uppercase font-bold md:text-[40px]  md:leading-[48px] md:w-[70%] xl:ml-[20%] xl:w-[75%]  md:mr-[10%]">
+        <div className="flex flex-col items-center p-4 xl:w-[40%]  md:w-[70%] h-[419px] md:h-[650px] xl:h-[650px]">
+          <h1 className="flex  text-white w-[90%] text-[32px]  mt-[15%] tracking-[3.33px] leading-[40px] uppercase font-bold md:text-[40px]  md:leading-[48px] md:w-[75%] md:mt-[30%] xl:ml-[20%] xl:w-[75%] xl:mt-[25%]  md:mr-[10%]">
             {homeContent.banner.heading}
           </h1>
-          <p className="flex md:text-[15px] leading-[25px] w-full p-5 text-[#dfdfdf] opacity-60 md:mr-[10%] md:w-[70%] md:mb-3 xl:w-[80%] xl:ml-[23%]">
+          <p className="flex md:text-[15px] leading-[25px] w-full p-4 text-[#dfdfdf] opacity-60 md:mr-[10%] md:w-[80%] md:mb-[5%] xl:w-[80%] xl:ml-[22%]">
             {homeContent.banner.body}
           </p>
-          <div className="flex space-x-3 md:justify-between w-full md:ml-[18%] xl:ml-[30%]">
+          <div className="flex space-x-3 md:space-x-5 w-full md:ml-[7%] xl:ml-[26%]">
             <button className="flex  ml-[5%]  text-white font-bold uppercase text-xs tracking-[2px]">
               {homeContent.banner.button}
             </button>
@@ -30,7 +30,7 @@ const Home = () => {
         <div className="flex  flex-row md:hidden">
           <img className="w-full h-full" src={homeContent.banner.imgMobile} />
         </div>
-        <div className="hidden md:flex md:w-[30%] lg:hidden">
+        <div className="hidden md:flex md:w-[273px] lg:hidden">
           <img className="w-full" src={homeContent.banner.imgTab} />
         </div>
       </div>
