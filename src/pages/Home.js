@@ -13,7 +13,7 @@ const Home = () => {
           <h1 className="flex  text-white w-[90%] text-[32px]  mt-[15%] tracking-[3.33px] leading-[40px] uppercase font-bold md:text-[40px]  md:leading-[48px] md:w-[75%] md:mt-[30%] xl:ml-[20%] xl:w-[75%] xl:mt-[25%]  md:mr-[10%]">
             {homeContent.banner.heading}
           </h1>
-          <p className="flex md:text-[15px] leading-[25px] w-full p-4 text-[#dfdfdf] opacity-60 md:mr-[10%] md:w-[80%] md:mb-[5%] xl:w-[80%] xl:ml-[22%]">
+          <p className="flex md:text-[15px] leading-[25px] w-full p-4 text-[#dfdfdf] opacity-60 md:mr-[10%] md:w-[80%] md:mb-[5%] xl:w-[80%] xl:ml-[20%]">
             {homeContent.banner.body}
           </p>
           <div className="flex space-x-3 md:space-x-5 w-full md:ml-[7%] xl:ml-[26%]">
