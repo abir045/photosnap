@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="hidden md:flex justify-around my-4 items-center">
+      <div className="hidden md:flex justify-around  items-center h-[72px]">
         <a href="/">
           <img className="flex" src={logo} />{" "}
         </a>
