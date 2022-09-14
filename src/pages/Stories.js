@@ -5,9 +5,9 @@ import arrow from "../assets/shared/desktop/arrow.svg";
 const Stories = () => {
   return (
     <>
-      <div className="flex flex-col ">
-        <div className="flex flex-col   relative ">
-          <img className="hidden lg:flex" src={StoriesContent.banner.img} />
+      <div className="flex flex-col">
+        <div className="flex flex-col  relative ">
+          <img className="hidden xl:flex" src={StoriesContent.banner.img} />
           <img
             className="hidden lg:hidden md:flex"
             src={StoriesContent.banner.imgTab}
@@ -17,7 +17,7 @@ const Stories = () => {
             src={StoriesContent.banner.imgMobile}
           />
 
-          <div className="absolute top-[100%] bg-black md:bg-transparent w-full py-10  px-10   md:top-[15%] text-white  md:mx-[5%]">
+          <div className="absolute top-[100%] bg-black h-[495px] md:bg-transparent w-full py-15 px-10 md:top-[15%] text-white md:mx-[5%]">
             <h5 className="text-xs uppercase font-bold tracking-[2px] my-5">
               {StoriesContent.banner.heading}
             </h5>
@@ -74,7 +74,7 @@ const Stories = () => {
 
       {/* tab  */}
 
-      <div className="grid grid-flow-row mt-[60%] pt-[70%] md:mt-[-70%] xl:grid-rows-4 xl:grid-cols-4  lg:grid-rows-4 lg:grid-cols-4  md:grid-cols-2 md:grid-rows-8">
+      <div className="grid grid-flow-row mt-[50%] pt-[70%] md:mt-[-70%] xl:grid-rows-4 xl:grid-cols-4  lg:grid-rows-4 lg:grid-cols-4  md:grid-cols-2 md:grid-rows-8">
         {StoriesContent.photos.map((item, id) => (
           <div
             key={id}
