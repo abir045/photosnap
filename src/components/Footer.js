@@ -27,10 +27,18 @@ const Footer = () => {
 
           {/* links */}
           <ul className="hidden text-xs text-white font-bold uppercase tracking-[2px] md:mt-10 xl:mt-0 md:ml-[-60%] xl:ml-5  md:flex md:space-x-4 lg:space-x-0 xl:space-y-3  xl:flex xl:flex-col">
-            <li className="hover:opacity-30">home</li>
-            <li className="hover:opacity-30">stories</li>
-            <li className="hover:opacity-30">features</li>
-            <li className="hover:opacity-30">pricing</li>
+            <li className="hover:opacity-30">
+              <a href="/">home</a>
+            </li>
+            <li className="hover:opacity-30">
+              <a href="/stories">stories</a>
+            </li>
+            <li className="hover:opacity-30">
+              <a href="/features">features</a>
+            </li>
+            <li className="hover:opacity-30">
+              <a href="/pricing">pricing</a>
+            </li>
           </ul>
           {/* button */}
           <div className="flex space-x-3  xl:space-x-5 xl:mr-[6%]">
