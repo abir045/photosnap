@@ -21,7 +21,7 @@ const Stories = () => {
             <h5 className="text-xs uppercase font-bold tracking-[2px] my-5">
               {StoriesContent.banner.heading}
             </h5>
-            <h1 className="font-bold text-[32px] w-[70%] tracking-[3.-[40px] uppercase md:tracking-[4.166px] md:w-[40%] xl:w-[25%]">
+            <h1 className="font-bold text-[32px] w-[70%] tracking-[3.14px] uppercase md:tracking-[4.166px] md:w-[40%] xl:w-[25%]">
               {StoriesContent.banner.headingTitle}
             </h1>
             <div className="flex  space-x-3 my-5">
@@ -32,11 +32,11 @@ const Stories = () => {
                 {StoriesContent.banner.photographer}
               </span>
             </div>
-            <p className="my-5 text-white text-base opacity-60 md:w-[60%] xl:w-[30%] ">
+            <p className=" text-white text-base opacity-60 md:w-[60%] xl:w-[30%] ">
               {StoriesContent.banner.body}
             </p>
 
-            <div className="flex space-x-3">
+            <div className="flex space-x-3 py-[10%]">
               <button className="uppercase text-xs tracking-[2px]">
                 {StoriesContent.banner.button}
               </button>

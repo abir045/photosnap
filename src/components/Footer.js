@@ -14,7 +14,7 @@ import instagramHover from "../assets/shared/desktop/instagramHover.svg";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col py-5  md:py-[5%] xl:py-5  bg-black  justify-between">
+    <div className="flex flex-col w-full py-5  md:py-[5%] xl:py-5  bg-black  justify-between">
       {/* tablet */}
 
       <div className="flex flex-col space-y-8 md:space-y-10 xl:space-y-3 ">
@@ -26,7 +26,7 @@ const Footer = () => {
           />
 
           {/* links */}
-          <ul className="hidden text-xs text-white font-bold uppercase tracking-[2px] md:mt-10 xl:mt-0 md:ml-[-68%] xl:ml-5  md:flex md:space-x-4 lg:space-x-0 xl:space-y-3  xl:flex xl:flex-col">
+          <ul className="hidden text-xs text-white font-bold uppercase tracking-[2px] md:mt-10 xl:mt-0 md:ml-[-60%] xl:ml-5  md:flex md:space-x-4 lg:space-x-0 xl:space-y-3  xl:flex xl:flex-col">
             <li className="hover:opacity-30">home</li>
             <li className="hover:opacity-30">stories</li>
             <li className="hover:opacity-30">features</li>
