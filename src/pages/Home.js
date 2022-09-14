@@ -7,7 +7,7 @@ const Home = () => {
   const { stories, footerBanners } = homeContent;
   return (
     <div>
-      <div className="flex flex-col-reverse justify-between bg-black  md:flex-row md:h-[600px]   md:w-full">
+      <div className="flex flex-col-reverse w-full justify-between bg-black  md:flex-row md:h-[600px] ">
         {/* text banner */}
         <div className="flex flex-col items-center p-4  xl:w-[40%]  md:w-[70%] xl:h-[650px]  h-[419px] md:h-full ">
           <h1 className="flex  text-white w-[90%] text-[32px]  mt-[15%] tracking-[3.33px] leading-[40px] uppercase font-bold md:text-[40px]  md:leading-[48px] md:tracking-[4.16px] md:w-[80%]  md:mt-[30%] xl:ml-[15%] xl:w-[75%] xl:tracking-[4.16px] xl:mt-[25%]  md:mr-[5%]">

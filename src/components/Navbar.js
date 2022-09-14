@@ -40,7 +40,7 @@ const Navbar = () => {
       <div className="flex mx-[5%]  justify-between items-center h-[72px] relative md:hidden">
         <img src={logo} />
         <img
-          className="absolute top-0 right-0"
+          className="absolute top-8 right-0"
           style={{ display: displayNav ? "block" : "none" }}
           onClick={() => setDisplayNav(!displayNav)}
           src={close}
