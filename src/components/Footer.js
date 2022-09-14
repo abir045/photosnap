@@ -150,10 +150,18 @@ const Footer = () => {
         </div>
 
         <ul className="flex flex-col pb-[20%] text-center text-xs space-y-4 text-white font-bold uppercase tracking-[2px] md:space-x-5 md:hidden">
-          <li className="hover:opacity-30">home</li>
-          <li className="hover:opacity-30">stories</li>
-          <li className="hover:opacity-30">features</li>
-          <li className="hover:opacity-30">pricing</li>
+          <li className="hover:opacity-30">
+            <a href="/">home</a>
+          </li>
+          <li className="hover:opacity-30">
+            <a href="/stories">stories</a>
+          </li>
+          <li className="hover:opacity-30">
+            <a href="/features">features</a>
+          </li>
+          <li className="hover:opacity-30">
+            <a href="/pricing">pricing</a>
+          </li>
         </ul>
 
         <div className="flex space-x-3 mx-auto md:hidden">

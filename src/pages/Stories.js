@@ -5,7 +5,7 @@ import arrow from "../assets/shared/desktop/arrow.svg";
 const Stories = () => {
   return (
     <>
-      <div className="flex flex-col mb-[25%] md:mb-[30%]  xl:mb-[30%]  xl:py-5 h-[495px]  md:py-5 md:h-[650px] xl:h-[650px]">
+      <div className="flex flex-col mb-[25%] md:mb-[30i%]  xl:mb-[30%]  xl:py-5 h-[495px]  md:py-5 md:h-[650px] xl:h-[650px]">
         <div className="flex flex-col  relative ">
           <img
             className="hidden xl:flex   w-full "

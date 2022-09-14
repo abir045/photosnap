@@ -7,9 +7,9 @@ const Home = () => {
   const { stories, footerBanners } = homeContent;
   return (
     <div>
-      <div className="flex flex-col-reverse w-full justify-between bg-black  md:flex-row md:h-[600px] ">
+      <div className="flex flex-col-reverse w-full  justify-between bg-black  md:flex-row md:h-[600px] ">
         {/* text banner */}
-        <div className="flex flex-col items-center p-4  xl:w-[40%]  md:w-[70%] xl:h-[650px]  h-[419px] md:h-full ">
+        <div className="flex flex-col items-center p-4   xl:w-[40%]  md:w-[70%] xl:h-[650px]  h-[419px] md:h-full ">
           <h1 className="flex  text-white w-[90%] text-[32px]  mt-[15%] tracking-[3.33px] leading-[40px] uppercase font-bold md:text-[40px]  md:leading-[48px] md:tracking-[4.16px] md:w-[80%]  md:mt-[30%] xl:ml-[15%] xl:w-[75%] xl:tracking-[4.16px] xl:mt-[25%]  md:mr-[5%]">
             {homeContent.banner.heading}
           </h1>
@@ -64,10 +64,10 @@ const Home = () => {
       </div>
 
       {/* designed for everyone */}
-      <div className="flex flex-col-reverse justify-between  bg-white md:flex-row md:h-[600px] md:-my-6 xl:h-[570px]">
+      <div className="flex flex-col-reverse justify-between  bg-white md:flex-row md:items-center   xl:h-full">
         {/* text banner */}
-        <div className="flex flex-col  items-center w-full h-[419px]  md:w-[70%]   xl:w-[40%] ">
-          <h1 className="text-black text-[40px] mt-[20%] md:mt-[30%] uppercase font-bold leading-[48px] p-2 w-full md:w-[70%] ml-[15%] md:mr-[30%] ">
+        <div className="flex flex-col  items-center w-full h-[419px]  md:w-[70%]  md:h-[600px]  xl:ml-[5%]  xl:w-[40%]  xl:h-full ">
+          <h1 className="text-black text-[40px] mt-[20%] md:mt-[20%] uppercase font-bold leading-[48px] p-2 w-full md:w-[70%] ml-[15%] md:mr-[30%] ">
             {homeContent.bannerDesign.heading}
           </h1>
           <p className="flex  ml-2 text-[15px] leadding-[25px] p-4 text-black opacity-60 w-[90%] md:w-full md:px-[18%]  md:mr-[18%]">
@@ -87,7 +87,7 @@ const Home = () => {
         <div className="flex flex-col  md:hidden">
           <img className="w-full" src={homeContent.bannerDesign.imgMobile} />
         </div>
-        <div className="hidden  md:flex md:my-6 md:w-[40%] xl:hidden">
+        <div className="hidden  md:flex  md:w-[40%] xl:hidden">
           <img
             className="w-full h-full"
             src={homeContent.bannerDesign.imgTab}
