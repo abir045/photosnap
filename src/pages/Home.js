@@ -7,7 +7,7 @@ const Home = () => {
   const { stories, footerBanners } = homeContent;
   return (
     <div>
-      <div className="flex flex-col-reverse w-full  justify-between bg-black  md:flex-row ] ">
+      <div className="flex flex-col-reverse w-full  justify-between bg-black  md:flex-row pb-10 md:pb-0">
         {/* text banner */}
         <div className="flex flex-col items-center p-5  xl:w-[40%]   md:w-[70%]   md:h-full xl:h-full ">
           <h1 className="flex  text-white w-[90%] text-[32px]  mt-[15%] tracking-[3.33px] leading-[40px] uppercase font-bold md:text-[40px]  md:leading-[48px] md:tracking-[4.16px] md:w-[80%]  md:mt-[30%] xl:ml-[15%] xl:w-[75%] xl:tracking-[4.16px] xl:mt-[25%]  md:mr-[5%]">
@@ -64,9 +64,9 @@ const Home = () => {
       </div>
 
       {/* designed for everyone */}
-      <div className="flex flex-col-reverse justify-between  bg-white md:flex-row md:items-center w-full h-full  xl:h-full">
+      <div className="flex flex-col-reverse justify-between  bg-white  md:flex-row md:items-center w-full h-full  xl:h-full">
         {/* text banner */}
-        <div className="flex flex-col  items-center w-full h-full   md:w-[70%]  md:h-[600px]  xl:w-[40%]   xl:h-full  xl:ml-[5%] ">
+        <div className="flex flex-col  items-center w-full h-full  mb-10 md:mb-0 md:w-[70%]  md:h-[600px]  xl:w-[40%]   xl:h-full  xl:ml-[5%] ">
           <h1 className="text-black text-[40px] mt-[20%] md:mt-[20%] xl:mt-[5%] uppercase font-bold leading-[48px] p-2 w-full md:w-[70%] ml-[15%] md:mr-[30%]   ">
             {homeContent.bannerDesign.heading}
           </h1>
