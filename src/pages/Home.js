@@ -24,7 +24,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="hidden xl:flex xl:w-[60%]">
+        <div className="hidden xl:flex">
           <img className="w-full h-full" src={homeContent.banner.img} />
         </div>
         <div className="flex  flex-row md:hidden">
@@ -64,10 +64,10 @@ const Home = () => {
       </div>
 
       {/* designed for everyone */}
-      <div className="flex flex-col-reverse justify-between  bg-white md:flex-row md:items-center   xl:h-full">
+      <div className="flex flex-col-reverse justify-between  bg-white md:flex-row md:items-center w-full  xl:h-full">
         {/* text banner */}
-        <div className="flex flex-col  items-center w-full h-[419px]  md:w-[70%]  md:h-[600px]  xl:ml-[5%]  xl:w-[40%]  xl:h-full ">
-          <h1 className="text-black text-[40px] mt-[20%] md:mt-[20%] uppercase font-bold leading-[48px] p-2 w-full md:w-[70%] ml-[15%] md:mr-[30%] ">
+        <div className="flex flex-col  items-center w-full h-[419px]   md:w-[70%]  md:h-[600px]  xl:ml-[5%]  xl:w-[45%]  xl:h-full ">
+          <h1 className="text-black text-[40px] mt-[20%] md:mt-[20%] xl:mt-[5%] uppercase font-bold leading-[48px] p-2 w-full md:w-[70%] ml-[15%] md:mr-[30%] ">
             {homeContent.bannerDesign.heading}
           </h1>
           <p className="flex  ml-2 text-[15px] leadding-[25px] p-4 text-black opacity-60 w-[90%] md:w-full md:px-[18%]  md:mr-[18%]">
@@ -81,8 +81,8 @@ const Home = () => {
           </div>
         </div>
         {/* photo banner */}
-        <div className="hidden lg:flex flex-row  xl:w-[60%] md:hidden">
-          <img className="w-full" src={homeContent.bannerDesign.img} />
+        <div className="hidden lg:flex flex-row   md:hidden">
+          <img className="w-full h-full" src={homeContent.bannerDesign.img} />
         </div>
         <div className="flex flex-col  md:hidden">
           <img className="w-full" src={homeContent.bannerDesign.imgMobile} />
@@ -97,7 +97,7 @@ const Home = () => {
       {/* stories cards */}
       <div className="flex flex-col relative w-full  md:grid md:grid-rows-2 md:grid-cols-2 xl:grid-cols-4 xl:grid-rows-1">
         {stories.map((item) => (
-          <div className="flex flex-col md:-my-3 h-[375px] xl:h-[500px]  md:h-[500px] relative ">
+          <div className="flex flex-col md:-my-3 h-[375px]  md:h-[500px] relative ">
             <img
               className="hidden w-full h-full hover:-translate-y-5 md:py-3 md:flex"
               src={item.img}
