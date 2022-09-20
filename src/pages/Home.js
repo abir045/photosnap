@@ -47,8 +47,8 @@ const Home = () => {
           <img className="w-full" src={homeContent.bannerStories.imgMobile} />
         </div>
 
-        <div className="flex flex-col   h-[419px]  p-4 items-center w-full md:w-[70%]  lg:w-[40%]">
-          <h1 className="text-black text-[32px]  leading-[40px] mt-[10%] md:mt-[22%] uppercase font-bold md:text-[40px] md:leading-[48px] md:w-[60%] md:mr-[25%] mr-[30%] p-2 md:p-0 w-[65%]">
+        <div className="flex flex-col   h-[419px]  p-4 items-center w-full md:w-[70%]  xl:ml-10 lg:w-[40%]">
+          <h1 className="text-black text-[32px]  leading-[40px] mt-[10%] md:mt-[22%] uppercase font-bold md:text-[40px] md:leading-[48px] md:w-[60%] md:mr-[25%] mr-[30%]   p-2 md:p-0 w-[65%]">
             {homeContent.bannerStories.heading}
           </h1>
           <p className="flex text-[15px] leading-[25px] md:text-base md:w-[85%] w-full md:p-0  md:mt-5 p-4 text-black opacity-60">
