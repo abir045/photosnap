@@ -7,13 +7,13 @@ const Home = () => {
   const { stories, footerBanners } = homeContent;
   return (
     <div>
-      <div className="flex flex-col-reverse w-full  justify-between bg-black  md:flex-row md:h-[600px] ">
+      <div className="flex flex-col-reverse w-full  justify-between bg-black  md:flex-row ] ">
         {/* text banner */}
-        <div className="flex flex-col items-center p-4   xl:w-[40%]  md:w-[70%] xl:h-[650px]  h-[419px] md:h-full ">
+        <div className="flex flex-col items-center p-5  xl:w-[40%]   md:w-[70%]   md:h-full xl:h-full ">
           <h1 className="flex  text-white w-[90%] text-[32px]  mt-[15%] tracking-[3.33px] leading-[40px] uppercase font-bold md:text-[40px]  md:leading-[48px] md:tracking-[4.16px] md:w-[80%]  md:mt-[30%] xl:ml-[15%] xl:w-[75%] xl:tracking-[4.16px] xl:mt-[25%]  md:mr-[5%]">
             {homeContent.banner.heading}
           </h1>
-          <p className="flex md:text-[15px] leading-[25px] w-full p-4 text-[#dfdfdf] opacity-60 md:mr-[11%] md:w-[80%] md:mb-[5%] xl:w-[80%] xl:ml-[20%]">
+          <p className="flex md:text-[15px] leading-[25px] w-full p-4 text-[#dfdfdf] opacity-60 md:mr-[11%] md:w-[80%] md:mb-[5%] xl:w-[80%] xl:ml-[23%]">
             {homeContent.banner.body}
           </p>
           <div className="flex space-x-3 md:space-x-5 w-full xl:my-2 md:ml-[5%] xl:ml-[26%]">
@@ -24,7 +24,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="hidden xl:flex">
+        <div className="hidden   xl:flex">
           <img className="w-full h-full" src={homeContent.banner.img} />
         </div>
         <div className="flex  flex-row md:hidden">
@@ -36,9 +36,9 @@ const Home = () => {
       </div>
 
       {/*Beautiful  stories */}
-      <div className="flex flex-col justify-between bg-white md:flex-row xl:h-[560px]">
-        <div className="hidden  xl:flex w-[60%]">
-          <img className="w-full" src={homeContent.bannerStories.img} />
+      <div className="flex flex-col justify-between bg-white md:flex-row">
+        <div className="hidden   xl:flex ">
+          <img className="w-full h-full" src={homeContent.bannerStories.img} />
         </div>
         <div className="hidden  md:flex  lg:hidden">
           <img className="w-full" src={homeContent.bannerStories.imgTab} />
@@ -47,8 +47,8 @@ const Home = () => {
           <img className="w-full" src={homeContent.bannerStories.imgMobile} />
         </div>
 
-        <div className="flex flex-col   h-[419px]  p-4 items-center w-full md:w-[70%]  xl:ml-10 lg:w-[40%]">
-          <h1 className="text-black text-[32px]  leading-[40px] mt-[10%] md:mt-[22%] uppercase font-bold md:text-[40px] md:leading-[48px] md:w-[60%] md:mr-[25%] mr-[30%]   p-2 md:p-0 w-[65%]">
+        <div className="flex flex-col h-[419px]  p-4 items-center w-full md:w-[70%] xl:w-[40%] xl:mr-[5%]">
+          <h1 className="text-black text-[32px]  leading-[40px] mt-[10%] md:mt-[22%] uppercase font-bold md:text-[40px] md:leading-[48px] md:w-[60%] md:mr-[25%] mr-[30%]  p-2 md:p-0 w-[65%]">
             {homeContent.bannerStories.heading}
           </h1>
           <p className="flex text-[15px] leading-[25px] md:text-base md:w-[85%] w-full md:p-0  md:mt-5 p-4 text-black opacity-60">
@@ -64,13 +64,13 @@ const Home = () => {
       </div>
 
       {/* designed for everyone */}
-      <div className="flex flex-col-reverse justify-between  bg-white md:flex-row md:items-center w-full  xl:h-full">
+      <div className="flex flex-col-reverse justify-between  bg-white md:flex-row md:items-center w-full h-full  xl:h-full">
         {/* text banner */}
-        <div className="flex flex-col  items-center w-full h-[419px]   md:w-[70%]  md:h-[600px]  xl:ml-[5%]  xl:w-[45%]  xl:h-full ">
-          <h1 className="text-black text-[40px] mt-[20%] md:mt-[20%] xl:mt-[5%] uppercase font-bold leading-[48px] p-2 w-full md:w-[70%] ml-[15%] md:mr-[30%] ">
+        <div className="flex flex-col  items-center w-full h-full   md:w-[70%]  md:h-[600px]  xl:w-[40%]   xl:h-full  xl:ml-[5%] ">
+          <h1 className="text-black text-[40px] mt-[20%] md:mt-[20%] xl:mt-[5%] uppercase font-bold leading-[48px] p-2 w-full md:w-[70%] ml-[15%] md:mr-[30%]   ">
             {homeContent.bannerDesign.heading}
           </h1>
-          <p className="flex  ml-2 text-[15px] leadding-[25px] p-4 text-black opacity-60 w-[90%] md:w-full md:px-[18%]  md:mr-[18%]">
+          <p className="flex  ml-2 text-[15px] leadding-[25px] p-4 text-black opacity-60 w-[90%] md:w-full md:px-[18%]  md:mr-[18%] xl:w-full">
             {homeContent.bannerDesign.body}
           </p>
           <div className="flex w-full mt-2 md:mt-5 space-x-5">
@@ -81,7 +81,7 @@ const Home = () => {
           </div>
         </div>
         {/* photo banner */}
-        <div className="hidden lg:flex flex-row   md:hidden">
+        <div className="hidden  xl:flex flex-row   md:hidden">
           <img className="w-full h-full" src={homeContent.bannerDesign.img} />
         </div>
         <div className="flex flex-col  md:hidden">
@@ -95,9 +95,9 @@ const Home = () => {
         </div>
       </div>
       {/* stories cards */}
-      <div className="flex flex-col relative w-full  md:grid md:grid-rows-2 md:grid-cols-2 xl:grid-cols-4 xl:grid-rows-1">
+      <div className="flex flex-col relative w-full h-full  md:grid md:grid-rows-2 md:grid-cols-2 xl:grid-cols-4 xl:grid-rows-1">
         {stories.map((item) => (
-          <div className="flex flex-col md:-my-3 h-[375px]  md:h-[500px] relative ">
+          <div className="flex flex-col md:-my-3 relative ">
             <img
               className="hidden w-full h-full hover:-translate-y-5 md:py-3 md:flex"
               src={item.img}
